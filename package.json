@@ -1,0 +1,19 @@
+{
+  "name": "dev-dybka",
+  "version": "1.0.0",
+  "description": "dev-dybka",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanyaBooba/dev-dybka.git"
+  },
+  "author": "Daniil Dybka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanyaBooba/dev-dybka/issues"
+  },
+  "homepage": "https://github.com/DanyaBooba/dev-dybka#readme"
+}
