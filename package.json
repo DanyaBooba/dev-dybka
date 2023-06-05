@@ -1,5 +1,6 @@
 {
   "name": "dev-dybka",
+  "type": "module",
   "version": "1.0.0",
   "description": "dev-dybka",
   "main": "gulpfile.js",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/DanyaBooba/dev-dybka/issues"
   },
-  "homepage": "https://github.com/DanyaBooba/dev-dybka#readme"
+  "homepage": "https://github.com/DanyaBooba/dev-dybka#readme",
+  "devDependencies": {
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1"
+  }
 }
