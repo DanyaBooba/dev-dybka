@@ -1,4 +1,9 @@
 :root {
+    /* Default */
+    --bg-color: #fff;
+    --text-default: #000;
+
+    /* Colors */
     --text-color-1: #000;
     --text-color-2: #555;
     --text-color-3: #eee;

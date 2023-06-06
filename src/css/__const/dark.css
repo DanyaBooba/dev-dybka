@@ -1,0 +1,13 @@
+:root {
+    /* Default */
+    --bg-color: #17152b;
+    --text-default: #fff;
+
+    /* Colors */
+    --text-color-1: #000;
+    --text-color-2: #aaa;
+    --text-color-3: #eee;
+
+    --text-link-1: #4B94FF;
+    --text-link-2: #0D6EFD;
+}
