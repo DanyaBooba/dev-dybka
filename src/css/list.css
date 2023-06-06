@@ -24,6 +24,10 @@
     margin-top: 20px;
 }
 
+.list-group .title {
+    margin-bottom: 20px;
+}
+
 /* Disabled */
 .disabled {
     color: var(--text-color-2) !important;
