@@ -1,0 +1,36 @@
+/* Footer */
+
+.footer {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 3px solid var(--text-color-3);
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+/* Logo */
+
+.footer__logo a {
+    font-size: 30px;
+    color: var(--text-color-1);
+    text-decoration: none;
+}
+
+.footer a:hover p,
+.footer a:focus p {
+    color: var(--text-color-2);
+}
+
+/* List */
+
+.footer li {
+    margin-bottom: 10px;
+}

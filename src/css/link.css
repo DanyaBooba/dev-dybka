@@ -1,0 +1,12 @@
+.link {
+    font-size: 20px;
+    color: var(--text-link-1);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--text-link-2);
+}

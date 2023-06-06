@@ -2,14 +2,14 @@
     margin-top: 20px;
     margin-bottom: 40px;
     padding-bottom: 20px;
-    border-bottom: 3px solid var(--text-color-1);
+    border-bottom: 3px solid var(--text-color-3);
 }
 
 .header p {
     font-size: 40px;
     text-align: center;
     margin-bottom: 0;
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
 }
 
 .header a {
@@ -23,5 +23,5 @@
 .header a:hover p,
 .header a:focus p {
     color: var(--text-color-2);
-    transform: rotate(-10deg);
+    transform: rotate(-7deg);
 }
