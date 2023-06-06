@@ -25,7 +25,7 @@ export const html = () => {
 
 export const stylesindex = () => {
 	return gulp
-		.src("src/css/*.css")
+		.src(["src/css/*.css", "src/css/adaptive/*.css"])
 		.pipe(autoprefixer())
 		.pipe(cssconcat("index.css"))
 		.pipe(cssmin())

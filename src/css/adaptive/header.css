@@ -1,0 +1,25 @@
+@media(max-width: 991px) {
+    .header-pc {
+        display: none !important;
+    }
+
+    .header .main-page p {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .gx-5 {
+        --bs-gutter-x: 0rem;
+    }
+}
+
+@media(min-width: 992px) {
+    .header-mobile {
+        display: none !important;
+    }
+
+    .gx-5 {
+        --bs-gutter-x: 3rem;
+    }
+}

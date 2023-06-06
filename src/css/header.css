@@ -5,7 +5,7 @@
     border-bottom: 3px solid var(--text-color-3);
 }
 
-.header p {
+.header .main-page p {
     font-size: 40px;
     text-align: center;
     margin-bottom: 0;
@@ -21,4 +21,19 @@
 
 .header a:hover p {
     color: var(--text-color-2);
+}
+
+/* PC */
+
+.header .header-pc p {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Mobile */
+
+.header .header-mobile p {
+    font-size: 25px;
+    margin-bottom: 0;
 }
