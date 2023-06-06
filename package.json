@@ -5,7 +5,7 @@
   "description": "dev-dybka",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "gulp build"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
