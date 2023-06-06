@@ -1,0 +1,32 @@
+/* Load */
+
+@font-face {
+    font-family: Geologica-Light;
+    font-style: normal;
+    src: url("/fonts/Geologica/Geologica-Light.ttf");
+    /* src: url("/fonts/HalvarBreit.woff2") format("woff2"); */
+}
+
+@font-face {
+    font-family: Geologica-Bold;
+    font-style: normal;
+    src: url("/fonts/Geologica/Geologica-Bold.ttf");
+    /* src: url("/fonts/HalvarBreit.woff2") format("woff2"); */
+}
+
+/* Set */
+p,
+div,
+nobr,
+a,
+nav,
+main,
+header,
+footer
+{
+    font-family: Geologica-Light;
+}
+
+b, .fw-bold {
+    font-family: Geologica-Bold;
+}
