@@ -3,7 +3,7 @@
         display: none !important;
     }
 
-    .header .main-page p {
+    .header .main-page h2 {
         font-size: 30px;
         text-align: center;
         margin-bottom: 0;
@@ -21,5 +21,18 @@
 
     .gx-5 {
         --bs-gutter-x: 3rem;
+    }
+}
+
+@media(max-width: 464px) {
+    .header .header-mobile h2 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    .header .main-page h2 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 0;
     }
 }

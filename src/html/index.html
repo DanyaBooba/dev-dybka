@@ -3,7 +3,7 @@
     <header class="header">
         <div class="container">
             <a href="/" class="main-page" aria-label="Вернуться на главную">
-                <p>Курсы «Дыбка Даниила»</p>
+                <h2>Курсы «Дыбка Даниила»</h2>
             </a>
         </div>
     </header>
@@ -11,7 +11,9 @@
     <main class="container">
         <div class="row row-cols-1 row-cols-lg-2 gx-5">
             <div class="col">
-                @@include('../modules/courses/list-courses.html')
+                @@include('../modules/courses/list-courses.html', {
+                    "mainpage": "true"
+                })
             </div>
             <div class="col course-empty">
                 <div class="d-flex align-items-center">

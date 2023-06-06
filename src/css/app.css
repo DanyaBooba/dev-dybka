@@ -9,3 +9,38 @@ body {
 svg {
     fill: var(--text-default);
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p,
+div,
+span,
+i,
+b {
+    color: var(--text-default);
+}
+
+/* Another */
+
+.course-empty {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.course-empty div {
+    color: var(--text-color-2);
+}
+
+.course-empty svg {
+    fill: var(--text-color-2);
+}

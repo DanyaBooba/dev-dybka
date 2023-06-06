@@ -52,3 +52,30 @@ h6,
 .h6 {
     font-family: HalvarBreit;
 }
+
+h1 b,
+h1 nobr,
+h2 b,
+h2 nobr,
+h3 b,
+h3 nobr,
+h4 b,
+h4 nobr,
+h5 b,
+h5 nobr,
+h6 b,
+h6 nobr,
+.h1 b,
+.h1 nobr,
+.h2 b,
+.h2 nobr,
+.h3 b,
+.h3 nobr,
+.h4 b,
+.h4 nobr,
+.h5 b,
+.h5 nobr,
+.h6 b,
+.h6 nobr {
+    font-family: HalvarBreit;
+}
