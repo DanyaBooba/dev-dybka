@@ -5,3 +5,7 @@ body {
 * {
     color: var(--text-default);
 }
+
+svg {
+    fill: var(--text-default);
+}
