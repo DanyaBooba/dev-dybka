@@ -10,4 +10,9 @@
 
     --text-link-1: #0D6EFD;
     --text-link-2: #4B94FF;
+
+    --bg-light-1: #ECF5F8;
+
+    /* Bootstrap */
+    --bs-tertiary-bg: #A0C5FE !important;
 }
