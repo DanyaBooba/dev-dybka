@@ -17,3 +17,7 @@
             2px 4px 8px 0px var(--list-group-item-color),
             2px 4px 16px 0px var(--list-group-item-color);
 }
+
+.list-group h2 {
+    margin-top: 20px;
+}

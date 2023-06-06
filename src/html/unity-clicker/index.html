@@ -1,0 +1,22 @@
+@@include('../../modules/head.html')
+
+<body>
+    @@include('../../modules/header.html')
+
+    <main class="container">
+        <div class="row row-cols-1 row-cols-lg-2 gx-5">
+            <div class="col">
+                @@include('../../modules/courses/list-courses.html',{
+                "unity_clicker": "active"
+                })
+            </div>
+            <div class="col">
+                @@include('../../modules/courses/list-course-unity-clicker.html')
+            </div>
+        </div>
+    </main>
+
+    @@include('../../modules/footer.html')
+</body>
+
+</html>
