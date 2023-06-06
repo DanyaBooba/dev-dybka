@@ -19,7 +19,6 @@
 }
 
 
-.header a:hover p,
-.header a:focus p {
+.header a:hover p {
     color: var(--text-color-2);
 }

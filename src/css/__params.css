@@ -1,4 +1,8 @@
 :root {
     --border-radius-1: 8px;
     --border-radius-2: 12px;
+
+    --delay-1: .3s;
+
+    --list-group-item-color: rgba(0, 170, 255, 0.3);
 }
