@@ -2,30 +2,32 @@
     <div class="container">
         <div class="header-pc">
             <a href="/" aria-label="Вернуться на главную">
-                <p>Курсы «Дыбка Даниила»</p>
+                <p>Курсы <nobr>«Дыбка Даниила»</nobr></p>
             </a>
         </div>
         <div class="header-mobile">
-            <div class="me-auto">
-                <a href="/" aria-label="Вернуться на главную">
-                    <p>Курсы «Дыбка Даниила»</p>
-                </a>
+            <div class="d-flex align-items-center">
+                <div class="me-auto">
+                    <a href="/" aria-label="Вернуться на главную">
+                        <p>Курсы <nobr>«Дыбка Даниила»</nobr></p>
+                    </a>
+                </div>
+                <button class="btn btn-light align-items-center d-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-controls="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="header-btn-menu"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                    Меню
+                </button>
             </div>
-            <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-                aria-controls="offcanvasExample">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list"
-                    viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                </svg>
-            </button>
         </div>
     </div>
 </header>
 
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="menu" aria-labelledby="menuLabel">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="menuLabel">Offcanvas</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">

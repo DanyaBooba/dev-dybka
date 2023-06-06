@@ -19,7 +19,8 @@
 }
 
 
-.header a:hover p {
+.header a:hover p,
+.header a:hover nobr {
     color: var(--text-color-2);
 }
 
@@ -36,4 +37,20 @@
 .header .header-mobile p {
     font-size: 25px;
     margin-bottom: 0;
+}
+
+/* Button */
+
+.header-btn-menu
+{
+    margin-right: 10px;
+}
+
+.header .btn-light {
+    border-radius: var(--border-radius-1) !important;
+    color: var(--text-default) !important;
+    fill: var(--text-default) !important;
+
+    background: none !important;
+    border: 1px solid var(--text-default) !important;
 }
