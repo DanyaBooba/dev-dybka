@@ -49,3 +49,9 @@
 .footer .meta p {
     color: var(--text-color-2);
 }
+
+/* Item */
+
+.footer .footer__item {
+    margin-bottom: 30px;
+}
