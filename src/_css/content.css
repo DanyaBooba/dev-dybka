@@ -30,8 +30,19 @@
 
 /* Media */
 
-@media(max-width:994px) {
+@media(max-width:991px) {
     .content {
         width: 100% !important;
+    }
+
+    .content .pagination .previous a {
+        text-align: start;
+        justify-content: flex-start !important;
+    }
+
+    .content .pagination .next a {
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--text-color-3);
+        padding-bottom: 30px;
     }
 }
