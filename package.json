@@ -1,6 +1,5 @@
 {
   "name": "dev-dybka",
-  "type": "module",
   "version": "1.0.0",
   "description": "dev-dybka",
   "main": "gulpfile.js",
@@ -18,6 +17,7 @@
   },
   "homepage": "https://github.com/DanyaBooba/dev-dybka#readme",
   "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
     "browser-sync": "^2.27.11",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
