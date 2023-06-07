@@ -46,3 +46,22 @@
         padding-bottom: 30px;
     }
 }
+
+/* Title */
+
+.content .title {
+    margin-bottom: 50px;
+}
+
+.content .title .course {
+    margin: 0;
+    font-size: 15px;
+    color: var(--text-color-2);
+    fill: var(--text-color-2);
+}
+
+/* Size */
+
+.content h1 {
+    font-size: 60px;
+}

@@ -48,7 +48,26 @@ layout: "base.njk"
             </div>
         </div>
         <div class="col-md-8 content">
+
+            <div class="title">
+                <h1>{{ title }}</h1>
+                <div class="container text-start">
+                    <div class="row row-cols-1 row-cols-lg-3">
+                        <div class="col ps-0">
+                            <p class="course">курс: Разработка на Unity</p>
+                        </div>
+                        <div class="col ps-0">
+                            <p class="course">автор: Дыбка Даниил</p>
+                        </div>
+                        <div class="col">
+                            <p class="course">время прочтения: {{ timeread }} мин.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             {{ content | safe }}
+
             <div class="container px-0">
                 <div class="row flex-row-reverse row-cols-1 row-cols-lg-2 pagination">
                     <div class="next">
