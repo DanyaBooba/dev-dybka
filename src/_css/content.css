@@ -41,14 +41,14 @@
         justify-content: flex-start !important;
     }
 
-    .content .pagination .next a {
-        margin-bottom: 30px;
-        border-bottom: 1px solid var(--text-color-3);
-        padding-bottom: 30px;
-    }
-
     .content h1 {
         font-size: 30px !important;
+    }
+
+    .content .pagination:has(.previous) .next a {
+        margin-bottom: 30px;
+        border-bottom: 1px solid var(--text-color-3) !important;
+        padding-bottom: 30px;
     }
 }
 

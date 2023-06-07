@@ -70,26 +70,26 @@ layout: "base.njk"
 
             <div class="container px-0">
                 <div class="row flex-row-reverse row-cols-1 row-cols-lg-2 pagination">
-                    <div class="next">
-                        {% if next %}
+                    {% if next %}
+                        <div class="next px-0">
                             <a href="/unity/{{ next }}" class="d-flex align-items-center" aria-label="Открыть следующий урок">
                                 Следующий урок
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                 </svg>
                             </a>
-                        {% endif %}
-                    </div>
-                    <div class="previous">
-                        {% if prev %}
+                        </div>
+                    {% endif %}
+                    {% if prev %}
+                        <div class="previous px-0">
                             <a href="/unity/{{ prev }}" class="d-flex align-items-center" aria-label="Открыть предыдущий урок">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
                                 </svg>
                                 Предыдущий урок
                             </a>
-                        {% endif %}
-                    </div>
+                        </div>
+                    {% endif %}
                 </div>
             </div>
         </div>
