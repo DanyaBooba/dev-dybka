@@ -39,6 +39,13 @@
     .content .pagination .previous a {
         text-align: start;
         justify-content: flex-start !important;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content .pagination .next a {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .content h1 {
