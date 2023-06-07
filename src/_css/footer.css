@@ -19,7 +19,7 @@
 /* Logo */
 
 .footer__logo {
-    margin-bottom: 50px !important;
+    margin-bottom: 30px !important;
 }
 
 .footer__logo a {
@@ -36,4 +36,16 @@
 
 .footer li {
     margin-bottom: 10px;
+}
+
+/* Meta */
+
+.footer .meta {
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+
+.footer .meta a,
+.footer .meta p {
+    color: var(--text-color-2);
 }
