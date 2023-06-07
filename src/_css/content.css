@@ -101,3 +101,13 @@
     padding: 20px;
     margin-bottom: 30px;
 }
+
+.content a {
+    color: var(--text-default);
+    text-decoration: none;
+    border-bottom: 2px solid var(--text-color-4);
+}
+
+.content a:hover {
+    border-bottom: 2px solid var(--text-default);
+}
