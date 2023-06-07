@@ -14,3 +14,15 @@
 .content .pagination .next {
     text-align: start;
 }
+
+.content .pagination a {
+    font-size: 20px;
+    color: var(--text-default);
+    fill: var(--text-default);
+    text-decoration: none;
+}
+
+.content .pagination a:hover {
+    color: var(--text-color-2);
+    fill: var(--text-color-2);
+}
