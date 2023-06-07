@@ -1,0 +1,7 @@
+.theme-toggle
+{
+    width: 300px;
+    background: var(--bg-light-1);
+    border-radius: var(--border-radius-3);
+    padding: 5px;
+}
