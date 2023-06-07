@@ -28,5 +28,6 @@ layout: "base.njk"
             </div>
         </div>
     </div>
-
 </main>
+
+{% include 'footer.njk' %}
