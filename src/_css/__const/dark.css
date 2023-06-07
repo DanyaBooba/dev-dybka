@@ -19,4 +19,6 @@
     /* Bootstrap */
     --bs-tertiary-bg: #A0C5FE !important;
     --bg-theme-color: #333;
+    --bs-btn-active-bg: #fff !important;
+    --bs-border-color: #252239 !important;
 }
