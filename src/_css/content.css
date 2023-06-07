@@ -7,8 +7,9 @@
     padding-bottom: 30px;
 }
 
-.content .pagination .previous {
+.content .pagination .previous a {
     text-align: end;
+    justify-content: flex-end !important;
 }
 
 .content .pagination .next {
@@ -25,4 +26,12 @@
 .content .pagination a:hover {
     color: var(--text-color-2);
     fill: var(--text-color-2);
+}
+
+/* Media */
+
+@media(max-width:994px) {
+    .content {
+        width: 100% !important;
+    }
 }

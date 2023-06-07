@@ -8,7 +8,10 @@ layout: "base.njk"
     <div class="row row-cols-1 gx-5">
         <div class="col-md-4 see-at-pc">
             <div class="list-group">
-                <a href="/unity" class="list-group-item list-group-item-action">
+                <a href="/unity" class="list-group-item d-flex align-items-center list-group-item-action">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                    </svg>
                     Вернуться
                 </a>
                 <h2 class="title">Разработка на Unity</h2>
@@ -50,7 +53,7 @@ layout: "base.njk"
                 <div class="row row-cols-1 row-cols-lg-2 pagination">
                     <div class="previous">
                         {% if prev %}
-                            <a href="/unity/{{ prev }}" class="d-flex align-items-center justify-content-end" aria-label="Открыть предыдущий урок">
+                            <a href="/unity/{{ prev }}" class="d-flex align-items-center" aria-label="Открыть предыдущий урок">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
                                 </svg>
