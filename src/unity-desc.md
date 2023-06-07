@@ -4,35 +4,23 @@ actUnityDesc: "active"
 ---
 
 <div class="list-group">
-    <h2 class="title">Разработка на Unity</h2>
-    <a href="1" class="list-group-item list-group-item-action">
-        1. Начало урока
+    <h2 class="title">Интересное название и описание для игры</h2>
+    <a href="#" class="list-group-item list-group-item-action">
+        1. Для чего нужно интересное название
     </a>
     <a href="#" class="list-group-item list-group-item-action">
-        2. Установка Unity на компьютер
+        2. Продумываем идеи для названия и описания
     </a>
     <a href="#" class="list-group-item list-group-item-action">
-        3. Знакомство с интерфейсом движка
+        3. Пробуем ChatGPT
     </a>
     <a href="#" class="list-group-item list-group-item-action">
-        4. Первый пробный проект. Сборка под Android
+        4. Создаем интересную графику
     </a>
     <a href="#" class="list-group-item list-group-item-action">
-        5. Разработка 2д платформера
+        5. Главное — выделяться
     </a>
     <a href="#" class="list-group-item list-group-item-action">
-        6. Добавление игрока. Скрипты на C#
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        7. Работа над локацией игры
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        8. Добавление других сцен. Создание меню
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        9. Сборка под Android, Windows, macOS, Linux
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-        10. Тест игры
+        6. Подготавливаем описание для Google Play
     </a>
 </div>

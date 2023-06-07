@@ -1,0 +1,16 @@
+.content .pagination
+{
+    margin-top: 50px;
+    border-top: 1px solid var(--text-color-3);
+    border-bottom: 1px solid var(--text-color-3);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content .pagination .previous {
+    text-align: end;
+}
+
+.content .pagination .next {
+    text-align: start;
+}
