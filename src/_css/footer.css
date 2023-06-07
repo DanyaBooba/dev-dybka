@@ -18,6 +18,10 @@
 
 /* Logo */
 
+.footer__logo {
+    margin-bottom: 50px !important;
+}
+
 .footer__logo a {
     font-size: 30px;
     color: var(--text-color-1);
