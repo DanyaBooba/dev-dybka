@@ -21,6 +21,7 @@
     color: var(--text-default);
     fill: var(--text-default);
     text-decoration: none;
+    border: 0 !important;
 }
 
 .content .pagination a:hover {
