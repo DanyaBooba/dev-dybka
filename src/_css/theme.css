@@ -47,6 +47,7 @@
 .btn:first-child:active,
 :not(.btn-check)+.btn:active
 {
+    color: var(--text-default) !important;
     background: var(--bg-color);
     border: 0;
 }
