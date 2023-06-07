@@ -112,3 +112,9 @@
 .content a:hover {
     border-bottom: 2px solid var(--text-default);
 }
+
+/* Table  */
+
+.content table {
+    margin-bottom: 30px;
+}
