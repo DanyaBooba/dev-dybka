@@ -125,3 +125,12 @@
 .content table {
     margin-bottom: 30px;
 }
+
+/* Img */
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: var(--border-radius-macos);
+}
