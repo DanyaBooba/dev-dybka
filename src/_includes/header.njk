@@ -41,6 +41,8 @@
         </button>
     </div>
     <div class="offcanvas-body">
+
+        {% if not course %}
         <div class="list-group">
             <h2>Технология Unity</h2>
             <a href="/unity/" class="list-group-item list-group-item-action {{ actUnity }}">
@@ -72,6 +74,12 @@
                 JavaScript на сайте
             </div>
         </div>
+        {% endif %}
+
+        {% if course %}
+            {{ courseName }}
+            {{ course }}
+        {% endif %}
 
     </div>
 </div>
