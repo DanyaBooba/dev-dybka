@@ -14,7 +14,7 @@ layout: "base.njk"
         border-radius: var(--border-radius-2);
         padding: 20px;
         width: 700px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .block .link {
