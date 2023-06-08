@@ -2,6 +2,5 @@
 	"layout": "courses/col-unity.njk",
 	"actUnity": "active",
 	"course": "unity.njk",
-	"courseName": "courseName",
 	"tags": "unity"
 }

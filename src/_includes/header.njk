@@ -77,8 +77,7 @@
         {% endif %}
 
         {% if course %}
-            {{ courseName }}
-            {{ course }}
+            {% include 'courses/lists/' + course %}
         {% endif %}
 
     </div>

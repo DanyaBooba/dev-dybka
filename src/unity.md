@@ -1,8 +1,6 @@
 ---
 layout: "two-col.njk"
 actUnity: "active"
-course: "unity.njk"
-courseName: "courseName"
 ---
 
 <div class="list-group">
