@@ -2,6 +2,7 @@
     /* Default */
     --bg-color: #fff;
     --text-default: #000;
+    --text-invert: #fff;
 
     /* Colors */
     --text-color-1: #000;
@@ -15,6 +16,8 @@
     --bg-light-1: #ECF5F8;
     --bg-light-2: #F2ECF8;
     --bg-light-3: #ecf8f0;
+
+    --bg-warning: #f8f6ec;
 
     /* Bootstrap */
     --bs-tertiary-bg: #A0C5FE !important;

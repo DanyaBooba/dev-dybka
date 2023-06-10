@@ -140,3 +140,33 @@
 .content ul {
     font-size: 20px;
 }
+
+.content ol {
+    font-size: 20px;
+}
+
+/* Warning */
+
+.content .warning
+{
+    background: var(--bg-warning);
+    border-radius: var(--border-radius-2);
+    padding: 13px;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.content .warning svg {
+    fill: var(--text-default);
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.content .warning a {
+    border-bottom: 2px solid var(--text-default);
+}
