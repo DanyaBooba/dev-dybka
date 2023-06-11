@@ -29,6 +29,41 @@
     fill: var(--text-color-2);
 }
 
+.content .pagination .hotkeys {
+    font-size: 20px;
+    color: var(--text-color-2);
+
+    display: flex;
+    align-items: center;
+    gap: 0 7px;
+
+    margin-top: 3px;
+}
+
+.content .pagination .hotkeys-end {
+    justify-content: end;
+}
+
+.content .pagination .hotkeys span {
+    color: var(--text-color-2);
+    font-size: 20px;
+    border: 1px solid var(--text-color-3);
+    border-radius: var(--border-radius-1);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.content .pagination .hotkeys svg {
+    fill: var(--text-color-2);
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid var(--text-color-3);
+    border-radius: var(--border-radius-1);
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
 /* Media */
 
 @media(max-width:991px) {
