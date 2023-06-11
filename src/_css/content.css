@@ -11,10 +11,6 @@
 .pagination-reverse:has(.next) {
     flex-direction: row-reverse;
 }
-/*
-.pagination-reverse:has(:not(.next)) {
-    flex-direction: row;
-} */
 
 .content .pagination .previous a {
     text-align: end;
@@ -83,13 +79,16 @@
     .content .pagination .previous a {
         text-align: start;
         justify-content: flex-start !important;
-        padding-left: 0;
-        padding-right: 0;
     }
 
-    .content .pagination .next a {
-        padding-left: 0;
-        padding-right: 0;
+    .content .pagination .previous {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .content .pagination .next {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 
     .content h1 {
