@@ -31,13 +31,29 @@ layout: "base.njk"
     .block svg {
         margin-left: 10px;
     }
+
+    @media(max-width: 991px) {
+        .block {
+            border: 0 !important;
+            width: 100% !important;
+        }
+
+        .block .link {
+            font-size: 20px;
+        }
+
+        .block svg {
+            width: 35px;
+            height: 35px;
+        }
+    }
 </style>
 
 <main class="container">
     <h1>Пользователю</h1>
     <div class="block">
         <h2>Политика конфиденциальности</h2>
-        <a href="privacypolicy" class="link d-flex">
+        <a href="privacypolicy" class="link d-flex align-items-center">
             Открыть
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
@@ -46,7 +62,7 @@ layout: "base.njk"
     </div>
     <div class="block">
         <h2>Условия использования</h2>
-        <a href="termsofuse" class="link d-flex">
+        <a href="termsofuse" class="link d-flex align-items-center">
             Открыть
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
@@ -55,7 +71,7 @@ layout: "base.njk"
     </div>
     <div class="block">
         <h2>Файлы куки</h2>
-        <a href="cookie" class="link d-flex">
+        <a href="cookie" class="link d-flex align-items-center">
             Открыть
             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
