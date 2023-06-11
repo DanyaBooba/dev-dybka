@@ -7,6 +7,15 @@
     padding-bottom: 30px;
 }
 
+.pagination-reverse:has(.next + .previous),
+.pagination-reverse:has(.next) {
+    flex-direction: row-reverse;
+}
+/*
+.pagination-reverse:has(:not(.next)) {
+    flex-direction: row;
+} */
+
 .content .pagination .previous a {
     text-align: end;
     justify-content: flex-end !important;
