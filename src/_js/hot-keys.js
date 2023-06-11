@@ -20,11 +20,19 @@ function runOnKeys(func, ...codes) {
 }
 
 function prevPage() {
-	console.log("prev page");
+	var linkprev = document.getElementById("postprevlesson");
+	if (linkprev !== null) {
+		window.history.replaceState(null, null, linkprev.href);
+		location.reload();
+	}
 }
 
 function nextPage() {
-	console.log("next page");
+	var linknext = document.getElementById("postnextlesson");
+	if (linknext !== null) {
+		window.history.replaceState(null, null, linknext.href);
+		location.reload();
+	}
 }
 
 // Prev
@@ -74,3 +82,6 @@ runOnKeys(
 	"Alt",
 	"ArrowRight"
 );
+
+// var light = document.getElementById("postnextlesson");
+// console.log(light);
