@@ -3,13 +3,15 @@
     margin-top: 50px;
     border-top: 1px solid var(--text-color-3);
     border-bottom: 1px solid var(--text-color-3);
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .pagination-reverse:has(.next + .previous),
 .pagination-reverse:has(.next) {
     flex-direction: row-reverse;
+}
+
+.pagination-reverse:has(.previous).pagination-reverse:not(:has(.next)) .previous {
+    border-right: 1px solid var(--text-color-3);
 }
 
 .content .pagination .previous a {
@@ -19,6 +21,17 @@
 
 .content .pagination .next {
     text-align: start;
+
+    border-left: 1px solid var(--text-color-3);
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content .pagination .previous {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
 }
 
 .content .pagination a {
@@ -84,11 +97,13 @@
     .content .pagination .previous {
         padding-left: 0 !important;
         padding-right: 0 !important;
+        border: 0 !important;
     }
 
     .content .pagination .next {
         padding-left: 0 !important;
         padding-right: 0 !important;
+        border: 0 !important;
     }
 
     .content h1 {
