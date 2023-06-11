@@ -106,6 +106,14 @@
         border: 0 !important;
     }
 
+    .content .pagination:has(.next).pagination:has(.previous) .next {
+        padding-bottom: 0 !important;
+    }
+
+    .content .pagination:has(.next).pagination:has(.previous) .previous {
+        padding-top: 0 !important;
+    }
+
     .content h1 {
         font-size: 30px !important;
     }
