@@ -22,15 +22,25 @@
 
 .list-group h2 {
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .list-group .title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.list-group p {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 /* Disabled */
+
 .disabled {
     color: var(--text-color-2) !important;
     background: var(--bg-color) !important;
     transition: none !important;
+    padding: 0 !important;
+    margin-bottom: 30px;
 }
