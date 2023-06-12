@@ -78,8 +78,8 @@
 
     border: 1px solid var(--text-color-3);
     border-radius: var(--border-radius-1);
-    padding-left: 6px;
-    padding-right: 6px;
+
+    padding: 8px 6px;
 }
 
 /* Media */
