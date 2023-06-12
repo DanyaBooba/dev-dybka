@@ -14,3 +14,7 @@
     height: 28px;
     margin-right: 10px;
 }
+
+.btn-openmenu:hover {
+    background: var(--bs-tertiary-bg-me);
+}
