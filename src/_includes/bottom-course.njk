@@ -39,24 +39,25 @@
     </button>
 </div>
 
-<div class="offcanvas offcanvas-menu-bottom offcanvas-bottom" data-bs-scroll="true" tabindex="-1" id="bottomcourse" aria-labelledby="bottomcourseLabel">
-  <div class="offcanvas-header">
-    <h4 class="offcanvas-title" id="bottomcourseLabel">Offcanvas</h4>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div>
-      Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+<div class="offcanvas offcanvas-menu-bottom offcanvas-bottom show" data-bs-scroll="true" tabindex="-1" id="bottomcourse" aria-labelledby="bottomcourseLabel">
+    <div class="offcanvas-header">
+        <h4 class="offcanvas-title" id="bottomcourseLabel"></h4>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
-    <div class="dropdown mt-3">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-        Dropdown button
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
+    <div class="offcanvas-body">
+        <div class="d-flex flex-column">
+            <button onClick="nextPage()" class="d-flex align-items-center justify-content-center">
+                Следующий урок
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-button" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                </svg>
+            </button>
+            <button onClick="prevPage()" class="d-flex align-items-center justify-content-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-button" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                </svg>
+                Предыдущий урок
+            </button>
+        </div>
     </div>
-  </div>
 </div>

@@ -5,5 +5,30 @@
 
 .offcanvas-menu-bottom
 {
-    height: 300px !important;
+    background: var(--bg-color-rgba);
+    backdrop-filter: blur(15px);
+
+    height: 250px !important;
+    border-top-left-radius: var(--border-radius-2);
+    border-top-right-radius: var(--border-radius-2);
+}
+
+.offcanvas-menu-bottom .offcanvas-body button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    margin-bottom: 15px;
+    background: var(--bg-light-1);
+    border-radius: var(--border-radius-2);
+    font-size: 20px;
+    padding: 10px;
+}
+
+.offcanvas-menu-bottom .offcanvas-body button svg {
+    width: 48px;
+    height: 48px;
 }

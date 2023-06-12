@@ -63,7 +63,30 @@ function checkBottom() {
 }
 
 function checkBottomMobile() {
-	console.log("mobile");
+	// Prev
+	var bottomprev = document.getElementById("coursebottomprev");
+	var linkprev = document.getElementById("postprevlesson");
+
+	if (linkprev !== null && bottomprev !== null) {
+		bottomprev.classList.remove("d-none");
+	}
+
+	// Next
+	var bottomnext = document.getElementById("coursebottomnext");
+	var linknext = document.getElementById("postnextlesson");
+
+	if (linknext !== null && bottomnext !== null) {
+		bottomnext.classList.remove("d-none");
+	}
+
+	// Title
+
+	var title = document.getElementById("posttitle");
+	var bottomtitle = document.getElementById("bottomposttitle");
+
+	if (title !== null && bottomtitle !== null) {
+		bottomtitle.textContent = title.textContent;
+	}
 }
 
 // Prev
