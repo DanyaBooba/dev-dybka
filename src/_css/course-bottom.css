@@ -1,0 +1,54 @@
+.course-bottom
+{
+    background: var(--bg-color-rgba);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid var(--text-color-3);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* SVG Link */
+
+.course-bottom .svg-link {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border: 1px solid var(--text-color-3);
+    border-radius: var(--border-radius-1);
+    fill: var(--text-color-2);
+    background: var(--bg-color);
+}
+
+.course-bottom a:hover .svg-link {
+    fill: var(--text-default);
+}
+
+/* SVG Button */
+
+.course-bottom .svg-button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--text-color-3);
+    border-radius: var(--border-radius-1);
+    fill: var(--text-color-2);
+    background: var(--bg-color);
+}
+
+.course-bottom button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.course-bottom button:hover .svg-button {
+    fill: var(--text-default);
+}
+
+/* Title */
+
+.course-bottom .title {
+    margin-left: 20px;
+}

@@ -4,6 +4,8 @@
     --text-default: #000;
     --text-invert: #fff;
 
+    --bg-color-rgba: rgba(255,255,255, .5);
+
     /* Colors */
     --text-color-1: #000;
     --text-color-2: #555;
