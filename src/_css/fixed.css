@@ -1,0 +1,30 @@
+.fixed-bottom-right
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.fixed-bottom-right button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    background-color: var(--bg-light-1);
+    padding: 15px;
+    border-radius: var(--border-radius-3);
+
+    transition: 0s !important;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.fixed-bottom-right svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--text-default);
+
+    transition: 0s !important;
+}
