@@ -31,7 +31,7 @@ layout: "base.njk"
             {{ content | safe }}
 
             <div class="container px-0">
-                <div class="row pagination-reverse row-cols-1 row-cols-lg-2 pagination">
+                <div class="row pagination-reverse px-3 row-cols-1 row-cols-lg-2 pagination">
                     {% if next %}
                         <div class="next">
                             <a href="/{{ lesson }}/{{ next }}" id="postnextlesson" class="d-flex align-items-center" aria-label="Открыть следующий урок">

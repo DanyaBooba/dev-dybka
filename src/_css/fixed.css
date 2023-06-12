@@ -1,8 +1,8 @@
 .fixed-bottom-right
 {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
 }
 
 .fixed-bottom-right button {
@@ -13,7 +13,7 @@
     background-color: transparent;
     cursor: pointer;
 
-    background-color: var(--bg-light-1);
+    background-color: var(--bg-light-1) !important;
     padding: 15px;
     border-radius: var(--border-radius-3);
 

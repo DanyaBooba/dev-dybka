@@ -2,3 +2,8 @@
 {
     background: var(--bg-color);
 }
+
+.offcanvas-menu-bottom
+{
+    height: 300px !important;
+}
