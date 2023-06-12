@@ -15,8 +15,6 @@ function setValue(value) {
 	var dark = document.getElementById("stylesheetdark");
 	var values = document.querySelectorAll('input[name="color-theme"]');
 
-	console.log(value);
-
 	if (value === "dark") {
 		localStorage.setItem("color-theme", "dark");
 		light.media = "not all";

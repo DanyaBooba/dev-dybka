@@ -11,6 +11,7 @@
     background-color: var(--bg-light-1);
 
     transition: var(--delay-1);
+    --bs-list-group-action-hover-bg: var(--bs-tertiary-bg-me) !important;
 }
 
 .list-group-item:hover {

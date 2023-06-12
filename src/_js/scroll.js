@@ -1,12 +1,14 @@
-window.onscroll = function () {
-	myFunction();
-};
+var bar = document.getElementById("myBar");
 
-function myFunction() {
-	var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-	var height =
-		document.documentElement.scrollHeight -
-		document.documentElement.clientHeight;
-	var scrolled = (winScroll / height) * 100;
-	document.getElementById("myBar").style.width = scrolled + "%";
+if (bar !== null) {
+	window.onscroll = function () {
+		var winScroll =
+			document.body.scrollTop || document.documentElement.scrollTop;
+		var height =
+			document.documentElement.scrollHeight -
+			document.documentElement.clientHeight;
+		var scrolled = (winScroll / height) * 100;
+
+		bar.style.width = scrolled + "%";
+	};
 }

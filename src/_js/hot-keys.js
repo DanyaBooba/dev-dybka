@@ -62,6 +62,10 @@ function checkBottom() {
 	}
 }
 
+function checkBottomMobile() {
+	console.log("mobile");
+}
+
 // Prev
 
 runOnKeys(
@@ -111,3 +115,4 @@ runOnKeys(
 );
 
 checkBottom();
+checkBottomMobile();
