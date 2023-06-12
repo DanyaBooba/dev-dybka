@@ -90,10 +90,7 @@ function checkBottomMobile() {
 
 	// Height
 	var canvasBottomMobile = document.getElementById("bottomcourse");
-	if (
-		(bottomprev === null || bottomnext === null) &&
-		canvasBottomMobile !== null
-	) {
+	if ((linkprev === null || linknext === null) && canvasBottomMobile !== null) {
 		canvasBottomMobile.classList.remove("height-full");
 		canvasBottomMobile.classList.add("height-one");
 	}
