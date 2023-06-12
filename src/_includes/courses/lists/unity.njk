@@ -1,13 +1,15 @@
 <div class="list-group">
+    {% if not noback %}
     <a href="/unity" class="list-group-item d-flex align-items-center list-group-item-action">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
         </svg>
         Вернуться
     </a>
+    {% endif %}
     <h2 class="title">Разработка на Unity</h2>
     <a href="/unity/1" class="list-group-item list-group-item-action {{ act1 }}">
-        1. Начало урока
+        1. Про игровой движок Unity
     </a>
     <a href="/unity/2" class="list-group-item list-group-item-action {{ act2 }}">
         2. Установка Unity на компьютер
@@ -16,7 +18,7 @@
         3. Знакомство с интерфейсом движка
     </a>
     <a href="/unity/4" class="list-group-item list-group-item-action {{ act4 }}">
-        4. Первый пробный проект. Сборка под Android
+        4. Создадим проект. Запустим на Android
     </a>
     <a href="/unity/5" class="list-group-item list-group-item-action {{ act5 }}">
         5. Разработка 2д платформера

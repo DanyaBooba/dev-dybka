@@ -3,8 +3,15 @@
     margin-top: 50px;
     border-top: 1px solid var(--text-color-3);
     border-bottom: 1px solid var(--text-color-3);
-    padding-top: 30px;
-    padding-bottom: 30px;
+}
+
+.pagination-reverse:has(.next + .previous),
+.pagination-reverse:has(.next) {
+    flex-direction: row-reverse;
+}
+
+.pagination-reverse:has(.previous).pagination-reverse:not(:has(.next)) .previous {
+    border-right: 1px solid var(--text-color-3);
 }
 
 .content .pagination .previous a {
@@ -14,6 +21,17 @@
 
 .content .pagination .next {
     text-align: start;
+
+    border-left: 1px solid var(--text-color-3);
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.content .pagination .previous {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
 }
 
 .content .pagination a {
@@ -29,6 +47,41 @@
     fill: var(--text-color-2);
 }
 
+.content .pagination .hotkeys {
+    font-size: 20px;
+    color: var(--text-color-2);
+
+    display: flex;
+    align-items: center;
+    gap: 0 7px;
+
+    margin-top: 3px;
+}
+
+.content .pagination .hotkeys-end {
+    justify-content: end;
+}
+
+.content .pagination .hotkeys span {
+    color: var(--text-color-2);
+    font-size: 20px;
+    border: 1px solid var(--text-color-3);
+    border-radius: var(--border-radius-1);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.content .pagination .hotkeys svg {
+    fill: var(--text-color-2);
+    width: 32px;
+    height: 32px;
+
+    border: 1px solid var(--text-color-3);
+    border-radius: var(--border-radius-1);
+
+    padding: 8px 6px;
+}
+
 /* Media */
 
 @media(max-width:991px) {
@@ -39,13 +92,26 @@
     .content .pagination .previous a {
         text-align: start;
         justify-content: flex-start !important;
-        padding-left: 0;
-        padding-right: 0;
     }
 
-    .content .pagination .next a {
-        padding-left: 0;
-        padding-right: 0;
+    .content .pagination .previous {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        border: 0 !important;
+    }
+
+    .content .pagination .next {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        border: 0 !important;
+    }
+
+    .content .pagination:has(.next).pagination:has(.previous) .next {
+        padding-bottom: 0 !important;
+    }
+
+    .content .pagination:has(.next).pagination:has(.previous) .previous {
+        padding-top: 0 !important;
     }
 
     .content h1 {
@@ -133,4 +199,40 @@
     height: auto;
     margin-bottom: 30px;
     border-radius: var(--border-radius-macos);
+}
+
+/* Lists */
+
+.content ul {
+    font-size: 20px;
+}
+
+.content ol {
+    font-size: 20px;
+}
+
+/* Warning */
+
+.content .warning
+{
+    background: var(--bg-warning);
+    border-radius: var(--border-radius-2);
+    padding: 13px;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+.content .warning svg {
+    fill: var(--text-default);
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.content .warning a {
+    border-bottom: 2px solid var(--text-default);
 }

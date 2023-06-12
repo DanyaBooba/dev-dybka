@@ -58,6 +58,12 @@ gulp.task("fonts", () => {
 	return gulp.src("src/_fonts/**/*").pipe(gulp.dest("dist/fonts"));
 });
 
+// Htaccess
+
+gulp.task("htaccess", () => {
+	return gulp.src("src/.htaccess").pipe(gulp.dest("dist/"));
+});
+
 // Watch
 
 gulp.task("watch", () => {
@@ -94,7 +100,8 @@ gulp.task(
 			"stylesconst",
 			"javascript",
 			"fonts",
-			"media"
+			"media",
+			"htaccess"
 		),
 		gulp.parallel("watch", "serve")
 	)
