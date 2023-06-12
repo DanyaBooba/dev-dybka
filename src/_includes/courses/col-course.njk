@@ -9,10 +9,16 @@ layout: "base.njk"
         <div class="col-md-4 see-at-pc" id="lessonleftpcmenu">
             {% include 'courses/lists/' + lesson + '.njk' %}
         </div>
-        <div class="col-md-1 d-none" id="lessonleftpcmenushort">
-            menu
-        </div>
         <div class="col-md-8 content" id="lessonrightcontent">
+
+            <div class="d-none mb-2" id="lessonbuttonmenu">
+                <button type="button" onClick="getShort()" class="btn btn-openmenu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0zM11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"/>
+                    </svg>
+                    Открыть меню
+                    </button>
+            </div>
 
             <div class="title">
                 <h1 id="posttitle">{{ title }}</h1>

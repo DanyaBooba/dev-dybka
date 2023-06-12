@@ -1,0 +1,16 @@
+.btn-openmenu
+{
+    background: var(--bg-light-1);
+    border-radius: var(--border-radius-1);
+    fill: var(--text-default);
+    color: var(--text-default);
+
+    display: flex;
+    align-items: center;
+}
+
+.btn-openmenu svg {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}

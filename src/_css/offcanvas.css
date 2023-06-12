@@ -7,8 +7,8 @@
 
 .offcanvas-menu-bottom
 {
-    background: var(--bg-color-rgba);
-    backdrop-filter: blur(15px);
+    background: var(--bg-color);
+    /* backdrop-filter: blur(15px); */
 
     border-top-left-radius: var(--border-radius-2);
     border-top-right-radius: var(--border-radius-2);
