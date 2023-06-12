@@ -1,12 +1,19 @@
 <div class="list-group">
     {% if not noback %}
-    <a href="/unity" class="list-group-item d-flex align-items-center list-group-item-action">
+    <a href="/unity" class="list-group-item d-flex small align-items-center list-group-item-action">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
         </svg>
         Вернуться
     </a>
+    <a onClick="hideLeftMenu()" class="list-group-item see-at-pc d-flex small align-items-center list-group-item-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M11.854 3.646a.5.5 0 0 1 0 .708L8.207 8l3.647 3.646a.5.5 0 0 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 0 1 .708 0zM4.5 1a.5.5 0 0 0-.5.5v13a.5.5 0 0 0 1 0v-13a.5.5 0 0 0-.5-.5z"/>
+        </svg>
+        Скрыть меню
+    </a>
     {% endif %}
+
     <h2 class="title">Разработка на Unity</h2>
     <a href="/unity/1" class="list-group-item list-group-item-action {{ act1 }}">
         1. Про игровой движок Unity

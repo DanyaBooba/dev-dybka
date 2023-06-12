@@ -45,3 +45,12 @@
     padding: 0 !important;
     margin-bottom: 30px;
 }
+
+/* Small */
+
+.list-group-item.small {
+    margin-bottom: 5px;
+    padding: 13px;
+    border-radius: var(--border-radius-1) !important;
+    box-shadow: none !important;
+}
