@@ -22,7 +22,7 @@ function runOnKeys(func, ...codes) {
 function prevPage() {
 	var linkprev = document.getElementById("postprevlesson");
 	if (linkprev !== null) {
-		window.history.replaceState(null, null, linkprev.href);
+		window.history.replaceState(null, null, linkprev.href + "#");
 		location.reload();
 	}
 }
@@ -30,8 +30,35 @@ function prevPage() {
 function nextPage() {
 	var linknext = document.getElementById("postnextlesson");
 	if (linknext !== null) {
-		window.history.replaceState(null, null, linknext.href);
+		window.history.replaceState(null, null, linknext.href + "#");
 		location.reload();
+	}
+}
+
+function checkBottom() {
+	// Prev
+	var bottomprev = document.getElementById("coursebottomprev");
+	var linkprev = document.getElementById("postprevlesson");
+
+	if (linkprev !== null && bottomprev !== null) {
+		bottomprev.classList.remove("d-none");
+	}
+
+	// Next
+	var bottomnext = document.getElementById("coursebottomnext");
+	var linknext = document.getElementById("postnextlesson");
+
+	if (linknext !== null && bottomnext !== null) {
+		bottomnext.classList.remove("d-none");
+	}
+
+	// Title
+
+	var title = document.getElementById("posttitle");
+	var bottomtitle = document.getElementById("bottomposttitle");
+
+	if (title !== null && bottomtitle !== null) {
+		bottomtitle.textContent = title.textContent;
 	}
 }
 
@@ -83,5 +110,4 @@ runOnKeys(
 	"ArrowRight"
 );
 
-// var light = document.getElementById("postnextlesson");
-// console.log(light);
+checkBottom();
