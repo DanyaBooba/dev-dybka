@@ -1,5 +1,10 @@
 ---
 layout: "base.njk"
+mainunitycourses:
+  - name: "Первый курс"
+    link: "unity"
+  - name: "Example course"
+    link: "unity-desc"
 ---
 
 <header class="header">
@@ -13,15 +18,16 @@ layout: "base.njk"
 <main class="container">
     <h2 class="main-title">Разработка на Unity</h2>
     <div class="row row-cols-1 row-cols-lg-3 g-3">
+        {%- for course in mainunitycourses -%}
         <div class="col">
-            <div class="course">
-                <div class="top">
-                    <h3>Пример названия нового курса</h3>
+            <div class="course d-flex flex-column">
+                <div class="top mb-auto">
+                    <h3>{{ course.name }}</h3>
                     <div class="d-flex flex-wrap"><span>Unity</span><span>C#</span><span>10 уроков</span><span>2 часа</span></div>
                 </div>
                 <div class="bottom">
                     <div class="open d-flex align-items-center">
-                        <a href="/unity/1/">
+                        <a href="/{{ course.link }}/1/">
                             Открыть курс
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -29,7 +35,7 @@ layout: "base.njk"
                         </svg>
                     </div>
                     <div class="open d-flex align-items-center">
-                        <a href="/unity/">
+                        <a href="/{{ course.link }}/">
                             Подробнее
                         </a>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
@@ -39,6 +45,7 @@ layout: "base.njk"
                 </div>
             </div>
         </div>
+        {%- endfor -%}
     </div>
 </main>
 
