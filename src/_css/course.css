@@ -69,3 +69,17 @@
 .course .open a:focus {
     border-bottom: 2px solid var(--text-default);
 }
+
+/* Row */
+
+.row-courses{
+    margin-bottom: 50px;
+}
+
+/* Adaptive  */
+
+@media(max-width: 991px) {
+    .course {
+        height: 265px;
+    }
+}
