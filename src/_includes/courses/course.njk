@@ -64,6 +64,10 @@ layout: "base.njk"
 
 </main>
 
+{% if not info %}
 {% include 'courses/bottom.njk' %}
+{% else %}
+{% include 'courses/bottom-mainpage.njk' %}
+{% endif %}
 
 {% include 'footer.njk' %}

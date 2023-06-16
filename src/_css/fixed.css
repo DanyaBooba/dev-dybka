@@ -1,8 +1,32 @@
 .fixed-bottom-right
 {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 16px;
+    right: 16px;
+}
+
+.fixed-bottom-right.fixed-link {
+    position: fixed;
+    bottom: 32px;
+    right: 16px;
+}
+
+.fixed-bottom-right.right-1 {
+    position: fixed;
+    bottom: 32px;
+    right: 180px;
+}
+
+.fixed-bottom-right.right-2 {
+    position: fixed;
+    bottom: 32px;
+    right: 90px;
+}
+
+.fixed-bottom-right.right-3 {
+    position: fixed;
+    bottom: 32px;
+    right: 14px;
 }
 
 .fixed-bottom-right button {
@@ -21,10 +45,53 @@
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
 }
 
+.fixed-bottom-right a {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    background-color: var(--bg-light-1) !important;
+    padding: 20px 15px;
+    border-radius: var(--border-radius-3);
+
+    transition: 0s !important;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
 .fixed-bottom-right svg {
     width: 32px;
     height: 32px;
     fill: var(--text-default);
 
     transition: 0s !important;
+}
+
+/* Start learn */
+
+.fixed-bottom-right a.start-learn {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    background-color: var(--color-danger) !important;
+    padding: 20px 15px;
+    border-radius: var(--border-radius-2);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px 100px;
+
+    transition: 0s !important;
+}
+
+@media(max-width: 500px) {
+    .fixed-bottom-right a.start-learn {
+        font-size: 18px;
+        padding: 20px 30px;
+    }
 }

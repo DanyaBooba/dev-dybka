@@ -69,6 +69,10 @@ function checkBottomMobile() {
 
 	if (linkprev !== null && bottomprev !== null) {
 		bottomprev.classList.remove("d-none");
+		var linkprevbottom = document.getElementById("mobilecoursebottomprev_link");
+		console.log(linkprevbottom);
+
+		linkprevbottom.href = linkprev.href;
 	}
 
 	// Next
@@ -77,22 +81,10 @@ function checkBottomMobile() {
 
 	if (linknext !== null && bottomnext !== null) {
 		bottomnext.classList.remove("d-none");
-	}
+		var linknextbottom = document.getElementById("mobilecoursebottomnext_link");
+		console.log(linknextbottom);
 
-	// Title
-
-	var title = document.getElementsByTagName("h1")[0];
-	var bottomtitle = document.getElementById("bottomcourseLabel");
-
-	if (title !== null && bottomtitle !== null) {
-		bottomtitle.textContent = title.textContent;
-	}
-
-	// Height
-	var canvasBottomMobile = document.getElementById("bottomcourse");
-	if ((linkprev === null || linknext === null) && canvasBottomMobile !== null) {
-		canvasBottomMobile.classList.remove("height-full");
-		canvasBottomMobile.classList.add("height-one");
+		linknextbottom.href = linknext.href;
 	}
 }
 
