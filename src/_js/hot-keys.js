@@ -57,7 +57,7 @@ function checkBottom() {
 	var title = document.getElementsByTagName("h1")[0];
 	var bottomtitle = document.getElementById("bottomposttitle");
 
-	if (title !== null && bottomtitle !== null) {
+	if (title !== null && bottomtitle !== null && title !== undefined) {
 		bottomtitle.textContent = title.textContent;
 	}
 }
@@ -70,7 +70,6 @@ function checkBottomMobile() {
 	if (linkprev !== null && bottomprev !== null) {
 		bottomprev.classList.remove("d-none");
 		var linkprevbottom = document.getElementById("mobilecoursebottomprev_link");
-		console.log(linkprevbottom);
 
 		linkprevbottom.href = linkprev.href;
 	}
@@ -82,7 +81,6 @@ function checkBottomMobile() {
 	if (linknext !== null && bottomnext !== null) {
 		bottomnext.classList.remove("d-none");
 		var linknextbottom = document.getElementById("mobilecoursebottomnext_link");
-		console.log(linknextbottom);
 
 		linknextbottom.href = linknext.href;
 	}
