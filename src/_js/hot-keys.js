@@ -54,7 +54,7 @@ function checkBottom() {
 
 	// Title
 
-	var title = document.getElementById("posttitle");
+	var title = document.getElementsByTagName("h1")[0];
 	var bottomtitle = document.getElementById("bottomposttitle");
 
 	if (title !== null && bottomtitle !== null) {
@@ -81,7 +81,7 @@ function checkBottomMobile() {
 
 	// Title
 
-	var title = document.getElementById("posttitle");
+	var title = document.getElementsByTagName("h1")[0];
 	var bottomtitle = document.getElementById("bottomcourseLabel");
 
 	if (title !== null && bottomtitle !== null) {

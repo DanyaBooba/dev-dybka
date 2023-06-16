@@ -2,33 +2,23 @@
 
 .list-group-item {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 0;
-    padding: 20px;
-    border-radius: var(--border-radius-2) !important;
 
+    padding: 15px 20px;
+
+    border-radius: var(--border-radius-2) !important;
     color: var(--text-default);
     background-color: var(--bg-light-1);
 
-    transition: var(--delay-1);
+    transition: var(--delay-2);
+
     --bs-list-group-action-hover-bg: var(--bs-tertiary-bg-me) !important;
 }
 
 .list-group-item:hover {
     box-shadow: 0px 1px 2px 0px var(--list-group-item-color),
-            1px 2px 4px 0px var(--list-group-item-color),
-            2px 4px 8px 0px var(--list-group-item-color),
-            2px 4px 16px 0px var(--list-group-item-color);
-}
-
-.list-group h2 {
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.list-group .title {
-    margin-bottom: 30px;
-    margin-top: 20px;
+            1px 2px 4px 0px var(--list-group-item-color);
 }
 
 .list-group p {
@@ -53,4 +43,10 @@
     padding: 13px;
     border-radius: var(--border-radius-1) !important;
     box-shadow: none !important;
+}
+
+/* Active */
+
+.list-group-item.active svg {
+    fill: #fff !important;
 }

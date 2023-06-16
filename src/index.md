@@ -28,9 +28,7 @@ mainunitycourses:
       - Опыт
 ---
 
-<div class="header">
-    <h1 class="text-center mb-4">Курсы от Дыбка Даниила</h1>
-</div>
+{% include "header.njk" %}
 
 <main class="container mt-5">
     <h2 class="main-title">Разработка на Unity</h2>
