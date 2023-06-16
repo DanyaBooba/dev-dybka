@@ -1,8 +1,6 @@
 ---
-layout: "base.njk"
+layout: "container.njk"
 ---
-
-{% include 'header.njk' %}
 
 <style>
     h1 {
@@ -79,5 +77,3 @@ layout: "base.njk"
         </a>
     </div>
 </main>
-
-{% include 'footer.njk' %}
