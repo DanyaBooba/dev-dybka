@@ -29,7 +29,7 @@ mainunitycourses:
 ---
 
 <div class="header">
-    <h1 class="text-center">Курсы от Дыбка Даниила</h1>
+    <h1 class="text-center mb-4">Курсы от Дыбка Даниила</h1>
 </div>
 
 <main class="container mt-5">
