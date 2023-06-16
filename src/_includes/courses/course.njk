@@ -10,35 +10,18 @@ layout: "base.njk"
             {% include 'courses/lists/' + lesson + '.njk' %}
         </div>
         <div class="col-md-8 content" id="lessonrightcontent">
-
             <div class="d-none see-at-pc mb-2" id="lessonbuttonmenu">
                 <button type="button" onClick="getShort()" class="btn btn-openmenu">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M4.146 3.646a.5.5 0 0 0 0 .708L7.793 8l-3.647 3.646a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708 0zM11.5 1a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-1 0v-13a.5.5 0 0 1 .5-.5z"/>
                     </svg>
                     Открыть меню
-                    </button>
-            </div>
-
-            <div class="title">
-                <h1 id="posttitle">{{ title }}</h1>
-                <div class="container text-start">
-                    <div class="row row-cols-1 row-cols-lg-3">
-                        <div class="col ps-0">
-                            <p class="course">Курс: {{ courseName }}</p>
-                        </div>
-                        <div class="col ps-0">
-                            <p class="course">Автор: {{ author }}</p>
-                        </div>
-                        <div class="col ps-0">
-                            <p class="course">Время прочтения: {{ timeread }} мин.</p>
-                        </div>
-                    </div>
-                </div>
+                </button>
             </div>
 
             {{ content | safe }}
 
+            {% if not mainpagecourse %}
             <div class="container px-0">
                 <div class="row pagination-reverse px-3 row-cols-1 row-cols-lg-2 pagination">
                     {% if next %}
@@ -50,8 +33,7 @@ layout: "base.njk"
                                 </svg>
                             </a>
                             <div class="hotkeys see-at-pc">
-                                <span>alt</span>
-                                +
+                                <span>alt</span> +
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="4 4 8 8">
                                     <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
                                 </svg>
@@ -67,8 +49,7 @@ layout: "base.njk"
                                 Предыдущий урок
                             </a>
                             <div class="hotkeys hotkeys-end see-at-pc">
-                                <span>alt</span>
-                                +
+                                <span>alt</span> +
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="4 4 8 8">
                                     <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
                                 </svg>
@@ -77,11 +58,12 @@ layout: "base.njk"
                     {% endif %}
                 </div>
             </div>
+            {% endif %}
         </div>
     </div>
 
 </main>
 
-{% include 'bottom-course.njk' %}
+{% include 'courses/bottom.njk' %}
 
 {% include 'footer.njk' %}

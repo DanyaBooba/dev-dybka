@@ -1,6 +1,9 @@
 {
-	"layout": "courses/col-unity.njk",
+	"layout": "courses/course.njk",
 	"actUnity": "active",
 	"course": "unity.njk",
-	"tags": "unity"
+	"tags": "unity",
+	"lesson": "unity",
+	"courseName": "Разработка на Unity",
+	"author": "Даниил Дыбка"
 }
