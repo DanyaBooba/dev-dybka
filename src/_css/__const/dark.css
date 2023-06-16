@@ -21,6 +21,9 @@
 
     --bg-warning: #664e49;
 
+    --color-danger: #ca9a0b;
+    --color-danger-hover: #e6b216;
+
     /* Bootstrap */
     --bs-tertiary-bg-me: #CFECF8 !important;
     --bg-theme-color: #333;

@@ -43,14 +43,72 @@
     bottom: 0px;
 }
 
-/* Link */
+/* Open */
 
 .course .open a {
     font-size: 20px;
     text-decoration: none;
     color: var(--text-default);
-    border-bottom: 2px solid var(--text-color-4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 7px;
+    background: var(--color-danger);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: var(--border-radius-2);
 }
+
+.course .open a:hover,
+.course .open a:focus {
+    background: var(--color-danger-hover);
+}
+
+/* More and Github */
+
+.course .more a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--text-default);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--text-color-2);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: var(--border-radius-2);
+}
+
+.course .github a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--text-default);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid var(--text-color-2);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: var(--border-radius-2);
+}
+
+@media(min-width: 992px) {
+    .course .github {
+        padding-left: 3.5px !important;
+    }
+
+    .course .more {
+        padding-right: 3.5px !important;
+    }
+}
+
+/* SVG */
 
 .course .open svg {
     fill: var(--text-default);
@@ -59,15 +117,18 @@
     margin-left: 5px;
 }
 
-.course .open {
-    margin-bottom: 7px;
+.course .more svg {
+    fill: var(--text-default);
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
 }
 
-/* Link hover */
-
-.course .open a:hover,
-.course .open a:focus {
-    border-bottom: 2px solid var(--text-default);
+.course .github svg {
+    fill: var(--text-default);
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 5px;
 }
 
 /* Row */
@@ -81,5 +142,9 @@
 @media(max-width: 991px) {
     .course {
         height: 265px;
+    }
+
+    .course .more a {
+        margin-bottom: 7px;
     }
 }
