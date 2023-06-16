@@ -44,3 +44,10 @@ b {
 .course-empty svg {
     fill: var(--text-color-2);
 }
+
+/* Title */
+
+.main-title
+{
+    margin-bottom: 30px;
+}

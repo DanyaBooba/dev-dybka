@@ -65,10 +65,12 @@ function removeclass(item, name) {
 
 // Local storage
 
-var storageLeftMenu = localStorage.getItem("left-menu");
+if (content !== null && leftmenu !== null && button !== null) {
+	var storageLeftMenu = localStorage.getItem("left-menu");
 
-if (storageLeftMenu === "full") {
-	getFull();
-} else if (storageLeftMenu === "short") {
-	getShort();
+	if (storageLeftMenu === "full") {
+		getFull();
+	} else if (storageLeftMenu === "short") {
+		getShort();
+	}
 }

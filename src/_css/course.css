@@ -1,0 +1,72 @@
+.course
+{
+    padding: 15px;
+    border-radius: var(--border-radius-2);
+    border: 1px solid var(--text-color-3);
+
+    height: 300px;
+}
+
+.course-color-1 {
+    border: 0px !important;
+    background: var(--bg-light-1);
+}
+
+.course-color-2 {
+    border: 0px !important;
+    background: var(--bg-light-2);
+}
+
+.course-color-3 {
+    border: 0px !important;
+    background: var(--bg-light-3);
+}
+
+/* Title */
+
+.course h3 {
+    margin-bottom: 3px;
+}
+
+/* Popups */
+
+.course .d-flex span {
+    margin-right: 7px;
+    border: 1px solid var(--text-color-3);
+    padding: 3px 5px;
+    border-radius: var(--border-radius-1);
+
+    margin-bottom: 7px;
+}
+
+.course .bottom {
+    position: absolute;
+    bottom: 0px;
+}
+
+/* Link */
+
+.course .open a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text-default);
+    border-bottom: 2px solid var(--text-color-4);
+}
+
+.course .open svg {
+    fill: var(--text-default);
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+}
+
+.course .open {
+    margin-bottom: 7px;
+}
+
+/* Link hover */
+
+.course .open a:hover,
+.course .open a:focus {
+    border-bottom: 2px solid var(--text-default);
+}
