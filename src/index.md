@@ -33,7 +33,7 @@ mainunitycourses:
     <div class="row row-courses row-cols-1 row-cols-lg-3 g-3">
         {%- for course in mainunitycourses -%}
         <div class="col">
-            <div class="course d-flex flex-column">
+            <div class="course_mainpage d-flex flex-column">
                 <div class="top mb-auto">
                     <h3>{{ course.name }}</h3>
                     <div class="d-flex flex-wrap">

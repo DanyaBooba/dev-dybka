@@ -1,5 +1,5 @@
 function changeColor() {
-	let items = document.getElementsByClassName("course");
+	let items = document.getElementsByClassName("course_mainpage");
 	if (items.length === 0) {
 		return;
 	}
