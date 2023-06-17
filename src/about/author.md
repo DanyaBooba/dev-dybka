@@ -1,29 +1,21 @@
 ---
-layout: "container.njk"
+layout: "post.njk"
 ---
 
-<style>
-    h1 {
-        margin-bottom: 50px
-    }
+# Об авторе
 
-    .block {
-        margin-bottom: 30px;
-        max-width: 900px;
-    }
+---
 
-    .block p,
-    .block a {
-        font-size: 20px;
-    }
+## Разработчик платформы
 
-    .block ul {
-        margin-bottom: 30px;
-    }
-</style>
+Автор платформы: Дыбка Даниил. Связаться с автором:
+
+- [daniil@dybka.ru](mailto:daniil@dybka.ru)
+- [телеграм](https://ddybka.t.me)
+- [вконтакте](https://vk.com/ddybka)
 
 <main class="container">
-    <h1>Об авторе</h1>
+    <h1></h1>
     <div class="block">
         <h2>Разработчик платформы</h2>
         <p>
