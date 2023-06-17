@@ -24,6 +24,12 @@ function prevPage() {
 	if (linkprev !== null) {
 		window.history.replaceState(null, null, linkprev.href + "#posttitle");
 		location.reload();
+	} else {
+		var startlearn = document.getElementById("startlearn");
+		if (startlearn !== null) {
+			window.history.replaceState(null, null, startlearn.href + "#posttitle");
+			location.reload();
+		}
 	}
 }
 
@@ -32,6 +38,12 @@ function nextPage() {
 	if (linknext !== null) {
 		window.history.replaceState(null, null, linknext.href + "#posttitle");
 		location.reload();
+	} else {
+		var startlearn = document.getElementById("startlearn");
+		if (startlearn !== null) {
+			window.history.replaceState(null, null, startlearn.href + "#posttitle");
+			location.reload();
+		}
 	}
 }
 

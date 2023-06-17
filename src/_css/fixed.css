@@ -71,27 +71,38 @@
 
 /* Start learn */
 
-.fixed-bottom-right a.start-learn {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    cursor: pointer;
+.start-learn {
+    position: fixed;
+    bottom: 10px;
+    right: 25%;
 
-    background-color: var(--color-danger) !important;
-    padding: 20px 15px;
+    background: var(--color-danger);
     border-radius: var(--border-radius-2);
-    text-decoration: none;
-    font-size: 25px;
-    padding: 20px 100px;
+}
 
-    transition: 0s !important;
+@media(min-width: 1200px) {
+    .start-learn {
+        right: 33%;
+    }
+}
+
+@media(max-width: 700px) {
+    .start-learn {
+        right: 15%;
+    }
+}
+
+.link--start-learn {
+    color: var(--text-default);
+    text-decoration: none;
+    font-size: 30px;
+
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 @media(max-width: 500px) {
-    .fixed-bottom-right a.start-learn {
-        font-size: 18px;
-        padding: 20px 30px;
+    .link--start-learn {
+        font-size: 20px;
     }
 }
