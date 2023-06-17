@@ -15,10 +15,10 @@
 /* SVG Link */
 
 .course-bottom .svg-link {
-    width: 32px;
-    height: 32px;
+    width: 42px;
+    height: 42px;
     margin-right: 10px;
-    border: 1px solid var(--text-color-3);
+    /* border: 1px solid var(--text-color-3); */
     border-radius: var(--border-radius-1);
     fill: var(--text-color-2);
     background: var(--bg-color);
@@ -31,9 +31,9 @@
 /* SVG Button */
 
 .course-bottom .svg-button {
-    width: 32px;
-    height: 32px;
-    border: 1px solid var(--text-color-3);
+    width: 42px;
+    height: 42px;
+    /* border: 1px solid var(--text-color-3); */
     border-radius: var(--border-radius-1);
     fill: var(--text-color-2);
     background: var(--bg-color);
