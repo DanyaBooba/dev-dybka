@@ -192,6 +192,19 @@
     margin-bottom: 30px;
 }
 
+.content table {
+    overflow: auto;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
 /* Img */
 
 .content img {
