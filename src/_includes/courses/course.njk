@@ -89,3 +89,10 @@ layout: "base.njk"
 {% endif %}
 
 {% include 'footer.njk' %}
+
+{% if privatecourse %}
+<script src="/js/private-course.js"></script>
+<script>
+    OpenCourse({{ private_idcourse }}, {{ private_idlesson }});
+</script>
+{% endif %}
