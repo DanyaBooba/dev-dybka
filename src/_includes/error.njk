@@ -1,0 +1,63 @@
+---
+layout: "base.njk"
+---
+
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: var(--bg-color);
+    }
+
+    .form-signin {
+        max-width: 330px;
+        padding: 15px;
+    }
+
+    .form-signin .form-floating:focus-within {
+        z-index: 2;
+    }
+
+    .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+</style>
+
+<main class="form-signin w-100 m-auto d-flex text-center flex-column justify-content-center">
+    <div class="d-flex justify-content-center">
+        <h1 class="display-4">{{ errorcode }}</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+        <p class="fs-4 mb-2">{{ errortext }}</p>
+    </div>
+    <div id="text" class="mb-4">
+        Перенаправление через 3 сек.
+    </div>
+    <div class="d-flex justify-content-center">
+        <a href="/" aria-label="Перейти на главную страницу" class="link">
+            Перейти на главную
+        </a>
+    </div>
+</main>
+
+<script>
+        setTimeout(function () {
+            window.location.href = '/';
+        }, 3000);
+</script>
+<script src="/js/change-theme.js"></script>

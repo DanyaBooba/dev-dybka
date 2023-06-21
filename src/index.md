@@ -23,13 +23,6 @@ mainunitycourses:
       - Unity
       - C#
       - Проект
-  - name: "Unity. Кликер"
-    link: "unity-desc"
-    github: "https://github.com/DanyaBooba/UnityEducation"
-    popups:
-      - Unity
-      - C#
-      - Опыт
 
 webcourses:
   - name: "Первый сайт. Публикуем на сервер"
