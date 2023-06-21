@@ -64,6 +64,12 @@ gulp.task("htaccess", () => {
 	return gulp.src("src/.htaccess").pipe(gulp.dest("dist/"));
 });
 
+// API
+
+gulp.task("api", () => {
+	return gulp.src("src/api/**/*").pipe(gulp.dest("dist/api/"));
+});
+
 // Watch
 
 gulp.task("watch", () => {
@@ -71,8 +77,8 @@ gulp.task("watch", () => {
 	gulp.watch("src/**/*.css", gulp.series("stylesindex", "stylesconst"));
 	gulp.watch("src/**/*.js", gulp.series("javascript"));
 	gulp.watch(
-		["src/_fonts/**/*", "src/_media/**/*"],
-		gulp.series("fonts", "media")
+		["src/_fonts/**/*", "src/_media/**/*", "src/api/**/*"],
+		gulp.series("fonts", "media", "api")
 	);
 });
 
@@ -101,7 +107,8 @@ gulp.task(
 			"javascript",
 			"fonts",
 			"media",
-			"htaccess"
+			"htaccess",
+			"api"
 		),
 		gulp.parallel("watch", "serve")
 	)
