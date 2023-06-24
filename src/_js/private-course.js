@@ -5,11 +5,17 @@ function OpenCourse(course, lesson) {
 	var code = new URL(window.location.href).searchParams.get("c");
 
 	if (code !== null) {
-		codecontent.classList.add("d-none");
-
 		(function () {
 			var http = new XMLHttpRequest();
-			http.open("GET", "http://localhost/api/course/?k=10&ls=1&c=123");
+			http.open(
+				"GET",
+				"http://localhost/api/course/?k=" +
+					course +
+					"&ls=" +
+					lesson +
+					"&c=" +
+					code
+			);
 			http.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
 					var dom = new DOMParser()
@@ -17,8 +23,9 @@ function OpenCourse(course, lesson) {
 						.getElementsByTagName("body")[0].innerHTML;
 
 					if (dom !== null) {
-						// console.log(dom);
-						content.innerHTML = dom;
+						if (dom.split(" ")[0] != "error") {
+							content.innerHTML = dom;
+						}
 					}
 				}
 			};
