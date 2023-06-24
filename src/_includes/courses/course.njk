@@ -21,7 +21,9 @@ layout: "base.njk"
 
             <div id="posttitle" class="visually-hidden">Начало урока</div>
 
-            {{ content | safe }}
+            <div id="postcontent">
+                {{ content | safe }}
+            </div>
 
             {% if next or prev or nextEnd %}
             <div class="container px-0">
