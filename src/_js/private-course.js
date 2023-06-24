@@ -7,12 +7,12 @@ function OpenCourse(course, lesson) {
 	if (code !== null) {
 		codecontent.classList.add("d-none");
 
-		var links = document.getElementsByTagName("a");
-		for (i = 0; i < links.length; i++) {
-			if (links[i].classList.contains("__private_link__")) {
-				links[i].href = links[i].href + "?c=" + code;
-			}
-		}
+		// var links = document.getElementsByTagName("a");
+		// for (i = 0; i < links.length; i++) {
+		// 	if (links[i].classList.contains("__private_link__")) {
+		// 		links[i].href = links[i].href + "?c=" + code;
+		// 	}
+		// }
 
 		(function () {
 			var http = new XMLHttpRequest();
