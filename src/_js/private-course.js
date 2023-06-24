@@ -7,16 +7,9 @@ function OpenCourse(course, lesson) {
 	if (code !== null) {
 		codecontent.classList.add("d-none");
 
-		// var links = document.getElementsByTagName("a");
-		// for (i = 0; i < links.length; i++) {
-		// 	if (links[i].classList.contains("__private_link__")) {
-		// 		links[i].href = links[i].href + "?c=" + code;
-		// 	}
-		// }
-
 		(function () {
 			var http = new XMLHttpRequest();
-			http.open("GET", "/api/html.txt");
+			http.open("GET", "http://localhost/api/course/?k=10&ls=1&c=123");
 			http.onreadystatechange = function () {
 				if (this.readyState == 4 && this.status == 200) {
 					var dom = new DOMParser()
