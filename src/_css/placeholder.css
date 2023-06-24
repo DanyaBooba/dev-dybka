@@ -1,0 +1,24 @@
+.placeholder
+{
+    border-radius: var(--border-radius-1);
+    margin-bottom: 20px;
+}
+
+.placeholder-glow {
+    margin-bottom: 0;
+}
+
+.placeholder.placeholder-1
+{
+    height: 75px;
+    margin-bottom: 50px;
+}
+
+.placeholder.placeholder-2 {
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.placeholder.placeholder-3 {
+    height: 20px;
+}
