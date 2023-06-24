@@ -1,13 +1,18 @@
 function OpenCourse(course, lesson) {
 	var content = document.getElementById("postcontent");
 	var codecontent = document.getElementById("privatecoursecode");
-	var placeholder = document.getElementById("privatecourseplaceholder");
 
 	var code = new URL(window.location.href).searchParams.get("c");
 
 	if (code !== null) {
 		codecontent.classList.add("d-none");
-		// placeholder.classList.remove("d-none");
+
+		var links = document.getElementsByTagName("a");
+		for (i = 0; i < links.length; i++) {
+			if (links[i].classList.contains("__private_link__")) {
+				links[i].href = links[i].href + "?c=" + code;
+			}
+		}
 
 		(function () {
 			var http = new XMLHttpRequest();
