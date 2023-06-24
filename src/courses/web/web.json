@@ -3,7 +3,5 @@
 	"courseName": "Первый сайт. Публикуем на сервер",
 	"author": "Даниил Дыбка",
 	"lessonUrl": "web",
-	"maxlesson": "1",
-	"privatecourse": "true",
-	"private_idcourse": "10"
+	"maxlesson": "1"
 }
