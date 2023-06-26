@@ -3,5 +3,6 @@
 	"courseName": "Разработка на Unity",
 	"author": "Даниил Дыбка",
 	"lessonUrl": "unity",
-	"maxlesson": "10"
+	"maxlesson": "10",
+	"tags": "Unity"
 }
