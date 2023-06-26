@@ -16,14 +16,32 @@
     --bs-list-group-action-hover-bg: var(--bs-tertiary-bg-me) !important;
 }
 
-.list-group-item:hover {
-    box-shadow: 0px 1px 2px 0px var(--list-group-item-color),
-            1px 2px 4px 0px var(--list-group-item-color);
-}
-
 .list-group p {
     margin: 0 !important;
     padding: 0 !important;
+}
+
+/* Hover */
+
+.list-group-item:hover {
+    box-shadow: 0px 1px 2px 0px var(--list-group-item-color),
+        1px 2px 4px 0px var(--list-group-item-color);
+}
+
+.list-group-item:hover.list-group-item:not(.active) {
+    color: #000 !important;
+}
+
+.list-group-item:hover.list-group-item:not(.active) svg {
+    fill: #000 !important;
+}
+
+.list-group-item:hover.active {
+    color: #fff !important;
+}
+
+.list-group-item:hover.active svg {
+    fill: #fff !important;
 }
 
 /* Disabled */
@@ -48,5 +66,5 @@
 /* Active */
 
 .list-group-item.active svg {
-    fill: #fff !important;
+    fill: #fff;
 }
