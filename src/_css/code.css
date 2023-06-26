@@ -25,3 +25,10 @@
     height: 24px;
     margin-right: 16px;
 }
+
+main pre {
+    border-radius: var(--border-radius-2);
+    background: var(--bg-light-3);
+    padding: 20px;
+    margin-bottom: 30px;
+}

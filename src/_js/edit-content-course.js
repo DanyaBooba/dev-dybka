@@ -2,7 +2,10 @@ function EditContent() {
 	var codes = document.getElementsByTagName("code");
 	for (i = 0; i < codes.length; i++) {
 		var code = codes[i];
-		if (code.classList.contains("language-C#")) {
+		if (
+			code.classList.contains("language-C#") ||
+			code.classList.contains("language-JSON")
+		) {
 			// console.log(code);
 			code.id = "tocopycode" + i;
 
