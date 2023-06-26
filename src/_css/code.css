@@ -1,0 +1,27 @@
+.code-copy {
+    margin-bottom: 20px;
+    width: 175px;
+    padding: 10px;
+    border-radius: var(--border-radius-1);
+    background: var(--bg-color);
+}
+
+.code-copy button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+}
+
+.code-copy svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+}

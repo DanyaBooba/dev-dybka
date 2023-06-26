@@ -21,7 +21,7 @@ gulp.task("html", () => {
 
 // Styles:index
 
-gulp.task("stylesindex", () => {
+gulp.task("styles:index", () => {
 	return gulp
 		.src(["src/_css/*.css", "src/_css/adaptive/*.css"])
 		.pipe(autoprefixer())
@@ -32,7 +32,7 @@ gulp.task("stylesindex", () => {
 
 // Styles:const
 
-gulp.task("stylesconst", () => {
+gulp.task("styles:const", () => {
 	return gulp
 		.src("src/_css/__const/*.css")
 		.pipe(autoprefixer())
@@ -46,10 +46,24 @@ gulp.task("javascript", () => {
 	return gulp.src("src/_js/**/*.js").pipe(gulp.dest("dist/js"));
 });
 
-// Media
+// Img:media
 
-gulp.task("media", () => {
+gulp.task("img:media", () => {
 	return gulp.src("src/_media/**/*").pipe(gulp.dest("dist/img"));
+});
+
+// Data:courses
+
+gulp.task("data:courses", () => {
+	return gulp
+		.src([
+			"src/courses/**/*.svg",
+			"src/courses/**/*.png",
+			"src/courses/**/*.jpg",
+			"src/courses/**/*.jpeg",
+			"src/courses/**/*.zip",
+		])
+		.pipe(gulp.dest("dist/courses/"));
 });
 
 // Fonts
@@ -64,21 +78,15 @@ gulp.task("htaccess", () => {
 	return gulp.src("src/.htaccess").pipe(gulp.dest("dist/"));
 });
 
-// Data
-
-gulp.task("data", () => {
-	return gulp.src("src/_data/**/*").pipe(gulp.dest("dist/data/"));
-});
-
 // Watch
 
 gulp.task("watch", () => {
 	gulp.watch("public/**/*.html", gulp.series("html"));
-	gulp.watch("src/**/*.css", gulp.series("stylesindex", "stylesconst"));
+	gulp.watch("src/**/*.css", gulp.series("styles:index", "styles:const"));
 	gulp.watch("src/**/*.js", gulp.series("javascript"));
 	gulp.watch(
-		["src/_fonts/**/*", "src/_media/**/*", "src/_data/**/*"],
-		gulp.series("fonts", "media", "data")
+		["src/_fonts/**/*", "src/_media/**/*", "src/courses/**/*"],
+		gulp.series("fonts", "img:media", "data:courses")
 	);
 });
 
@@ -102,13 +110,13 @@ gulp.task(
 	gulp.series(
 		gulp.parallel(
 			"html",
-			"stylesindex",
-			"stylesconst",
+			"styles:index",
+			"styles:const",
 			"javascript",
 			"fonts",
-			"media",
+			"img:media",
 			"htaccess",
-			"data"
+			"data:courses"
 		),
 		gulp.parallel("watch", "serve")
 	)
