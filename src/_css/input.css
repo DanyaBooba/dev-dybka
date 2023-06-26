@@ -1,0 +1,12 @@
+input {
+    background: var(--bg-color) !important;
+}
+
+input::placeholder {
+    color: var(--text-color-5) !important;
+}
+
+.form-control {
+    color: var(--text-default) !important;
+    border-color: var(--text-color-4);
+}
