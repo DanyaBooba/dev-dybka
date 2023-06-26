@@ -1,9 +1,9 @@
 .code-copy {
     margin-bottom: 20px;
-    width: 175px;
+    width: 170px;
     padding: 10px;
     border-radius: var(--border-radius-1);
-    background: var(--bg-color);
+    background: var(--bg-color-rgba-3);
 }
 
 .code-copy button {
