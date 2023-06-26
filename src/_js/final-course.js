@@ -30,7 +30,3 @@ function http(httpurl) {
 }
 
 ChangeCertificate();
-
-// http://localhost:3000/courses/unity/data/certificate__01.jpg
-
-// https://localhost:3000/courses/unity/data/certificate__02.jpg
