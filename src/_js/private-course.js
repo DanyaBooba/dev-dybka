@@ -2,7 +2,9 @@ function OpenCourse(course, lesson) {
 	var content = document.getElementById("postcontent");
 	var codecontent = document.getElementById("privatecoursecode");
 
-	var code = new URL(window.location.href).searchParams.get("c");
+	var code =
+		new URL(window.location.href).searchParams.get("c") ||
+		localStorage.getItem("course" + course);
 
 	if (code !== null) {
 		(function () {
@@ -25,6 +27,7 @@ function OpenCourse(course, lesson) {
 					if (dom !== null) {
 						if (dom.split(" ")[0] != "error") {
 							content.innerHTML = dom;
+							localStorage.setItem("course" + course, code);
 						}
 					}
 				}

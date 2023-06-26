@@ -21,7 +21,22 @@ layout: "base.njk"
 
             <div id="posttitle" class="visually-hidden">Начало урока</div>
 
-            {{ content | safe }}
+            <div id="postcontent">
+                {{ content | safe }}
+
+                {% if privatecourse %}
+                <div class="private-course" id="privatecoursecode">
+                    <div class="private-course--title">Пожалуйста, введите пароль курса</div>
+                    <div class="private-course--more">Данный курс закрытый и требует пароль.</div>
+                    <form method="get" action="?">
+                        <div class="input-group">
+                            <input type="password" class="form-control" name="c" placeholder="Пароль" aria-label="Пароль для курса">
+                        </div>
+                    </form>
+                    <div class="private-course--more">Если вам не сообщили пароль, уточните его у автора курса</div>
+                </div>
+                {% endif %}
+            </div>
 
             {% if next or prev or nextEnd %}
             <div class="container px-0">
@@ -89,3 +104,10 @@ layout: "base.njk"
 {% endif %}
 
 {% include 'footer.njk' %}
+
+{% if privatecourse %}
+<script src="/js/private-course.js"></script>
+<script>
+    OpenCourse({{ private_idcourse }}, {{ private_idlesson }});
+</script>
+{% endif %}
