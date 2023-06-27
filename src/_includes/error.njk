@@ -2,41 +2,7 @@
 layout: "base.njk"
 ---
 
-<style>
-    html,
-    body {
-        height: 100%;
-    }
-
-    body {
-        display: flex;
-        align-items: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        background-color: var(--bg-color);
-    }
-
-    .form-signin {
-        max-width: 330px;
-        padding: 15px;
-    }
-
-    .form-signin .form-floating:focus-within {
-        z-index: 2;
-    }
-
-    .form-signin input[type="email"] {
-        margin-bottom: -1px;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-
-    .form-signin input[type="password"] {
-        margin-bottom: 10px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
-</style>
+<link rel="stylesheet" href="/css/error.css">
 
 <main class="form-signin w-100 m-auto d-flex text-center flex-column justify-content-center">
     <div class="d-flex justify-content-center">
@@ -56,8 +22,8 @@ layout: "base.njk"
 </main>
 
 <script>
-        setTimeout(function () {
-            window.location.href = '/';
-        }, 3000);
+setTimeout(function () {
+    window.location.href = '/';
+}, 3000);
 </script>
 <script src="/js/change-theme.js"></script>
