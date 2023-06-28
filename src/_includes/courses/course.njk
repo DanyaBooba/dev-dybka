@@ -7,7 +7,7 @@ layout: "base.njk"
 <main class="container">
     <div class="row row-cols-1 gx-5">
         <div class="col-md-4 see-at-pc" id="lessonleftpcmenu">
-            {% include 'courses/lists/' + lessonUrl + '.njk' %}
+            {% include "courses/course-leftbar.njk" %}
         </div>
         <div class="col-md-8 content" id="lessonrightcontent">
             <div class="d-none see-at-pc mb-2" id="lessonbuttonmenu">
@@ -31,7 +31,6 @@ layout: "base.njk"
             {% endif %}
         </div>
     </div>
-
 </main>
 
 {% if not info %}

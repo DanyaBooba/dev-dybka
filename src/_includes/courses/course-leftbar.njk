@@ -1,41 +1,23 @@
-<div class="list-group">
-    <button onClick="hideLeftMenu()" class="list-group-item see-at-pc d-flex align-items-center list-group-item-action">
-        <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#chevron-bar-left"></use></svg>Скрыть меню
-    </button>
-    <a href="/courses/unity/" class="list-group-item d-flex align-items-center list-group-item-action {{ info }}">
-        <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
-    </a>
+<div class="container">
+    <div class="row row-cols-1 row-cols-lg-2 gx-3">
+        <button onClick="hideLeftMenu()" class="w-50 justify-content-center list-group-item see-at-pc d-flex align-items-center list-group-item-action">
+            <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#chevron-bar-left"></use></svg>Скрыть меню
+        </button>
+        <a href="/courses/{{ lesson.url }}/" class="w-50 justify-content-center list-group-item d-flex align-items-center list-group-item-action">
+            <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
+        </a>
+    </div>
+</div>
 
-    <a href="/courses/unity/1" class="list-group-item list-group-item-action {{ act1 }}">
-        1. Про игровой движок Unity
+<div class="list-group list-group-flush">
+
+    {% for bar in lesson.leftbar %}
+    {# {{ bar.id }} #}
+    {# {{ shortless.active }} #}
+    <a href="/courses/{{ lesson.url }}/{{ bar.id }}" class="list-group-item list-group-item-action">
+        {{ bar.id }}. {{ bar.name }}
     </a>
-    <a href="/courses/unity/2" class="list-group-item list-group-item-action {{ act2 }}">
-        2. Установка Unity на компьютер
-    </a>
-    <a href="/courses/unity/3" class="list-group-item list-group-item-action {{ act3 }}">
-        3. Знакомство с интерфейсом движка
-    </a>
-    <a href="/courses/unity/4" class="list-group-item list-group-item-action {{ act4 }}">
-        4. Создадим проект. Запустим на Android
-    </a>
-    <a href="/courses/unity/5" class="list-group-item list-group-item-action {{ act5 }}">
-        5. Разработка 2д платформера. Подготовка
-    </a>
-    <a href="/courses/unity/6" class="list-group-item list-group-item-action {{ act6 }}">
-        6. Работа над локацией
-    </a>
-    <a href="/courses/unity/7" class="list-group-item list-group-item-action {{ act7 }}">
-        7. Программируем на C#
-    </a>
-    <a href="/courses/unity/8" class="list-group-item list-group-item-action {{ act8 }}">
-        8. Работаем над логикой игры
-    </a>
-    <a href="/courses/unity/9" class="list-group-item list-group-item-action {{ act9 }}">
-        9. Теги. Урон. Пополнение здоровья
-    </a>
-    <a href="/courses/unity/10" class="list-group-item list-group-item-action {{ act10 }}">
-        10. Меню
-    </a>
+    {% endfor %}
 
     <a href="/courses/unity/11" class="list-group-item list-group-item-action {{ final }}">
         Завершение
