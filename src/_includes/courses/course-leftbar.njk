@@ -1,19 +1,21 @@
-<div class="container">
-    <div class="row row-cols-1 row-cols-lg-2 gx-3">
-        <button onClick="hideLeftMenu()" class="w-50 justify-content-center list-group-item see-at-pc d-flex align-items-center list-group-item-action">
-            <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#chevron-bar-left"></use></svg>Скрыть меню
-        </button>
-        <a href="/courses/{{ lesson.url }}/" class="w-50 justify-content-center list-group-item d-flex align-items-center list-group-item-action">
-            <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
-        </a>
+<div class="container mb-2">
+    <div class="leftbar-row">
+        <div class="col">
+            <button onClick="hideLeftMenu()" class="leftbar-btn leftbar-flex">
+                <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#chevron-bar-left"></use></svg>Скрыть меню
+            </button>
+        </div>
+        <div class="col">
+            <a href="/courses/{{ lesson.url }}/" class="leftbar-btn leftbar-flex">
+                <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
+            </a>
+        </div>
     </div>
 </div>
 
 <div class="list-group list-group-flush">
 
     {% for bar in lesson.leftbar %}
-    {# {{ bar.id }} #}
-    {# {{ shortless.active }} #}
     <a href="/courses/{{ lesson.url }}/{{ bar.id }}" class="list-group-item list-group-item-action">
         {{ bar.id }}. {{ bar.name }}
     </a>

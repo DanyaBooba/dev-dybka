@@ -1,0 +1,49 @@
+.leftbar-btn
+{
+    background: var(--bg-light-1);
+    border-radius: var(--border-radius-2);
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.leftbar-btn:hover {
+    background: var(--bs-tertiary-bg-me);
+}
+
+.leftbar-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width: 1412px) {
+    .leftbar-row {
+        --bs-gutter-x: 0.5rem;
+
+        flex-wrap: wrap;
+        display: flex;
+        margin-top: calc(-1 * var(--bs-gutter-y));
+        margin-right: calc(-.5 * var(--bs-gutter-x));
+        margin-left: calc(-.5 * var(--bs-gutter-x));
+    }
+
+    .col {
+        flex: 1 0 0%;
+    }
+
+    .leftbar-row>* {
+        flex-shrink: 0;
+        width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        margin-top: var(--bs-gutter-y);
+    }
+}
