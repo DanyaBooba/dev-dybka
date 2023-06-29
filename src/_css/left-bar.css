@@ -1,5 +1,4 @@
-.leftbar-btn
-{
+.leftbar-row .leftbar-btn {
     background: var(--bg-light-1);
     border-radius: var(--border-radius-2);
     padding: 10px;
@@ -14,11 +13,11 @@
     margin-bottom: 10px;
 }
 
-.leftbar-btn:hover {
+.leftbar-row .leftbar-btn:hover {
     background: var(--bs-tertiary-bg-me);
 }
 
-.leftbar-flex {
+.leftbar-row .leftbar-flex {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +34,7 @@
         margin-left: calc(-.5 * var(--bs-gutter-x));
     }
 
-    .col {
+    .leftbar-row .col {
         flex: 1 0 0%;
     }
 
