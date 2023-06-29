@@ -1,0 +1,12 @@
+.hash {
+    border: 0 !important;
+    text-decoration: none !important;
+
+    color: var(--text-color-3) !important;
+    transition: .5s;
+}
+
+.hash:hover,
+.hash:focus {
+    color: var(--text-default) !important;
+}

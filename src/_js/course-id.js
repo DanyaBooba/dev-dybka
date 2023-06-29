@@ -21,6 +21,11 @@ function AddID() {
 		) {
 			// console.log(clearText(content[i].textContent));
 			content[i].id = clearText(content[i].textContent);
+			content[i].innerHTML =
+				content[i].textContent +
+				" <a class='hash' href='#" +
+				content[i].id +
+				"'>#</a>";
 		}
 	}
 }
