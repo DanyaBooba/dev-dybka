@@ -29,7 +29,8 @@
 main pre {
     border-radius: var(--border-radius-2);
     background: var(--bg-light-3);
-    padding: 20px;
+    /* padding: 20px; */
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -42,10 +43,17 @@ code p {
     margin: 0 !important;
 }
 
-pre .count {
+.count {
     counter-increment: line-count;
+    color: var(--text-color-2);
 }
 
-pre .count::before {
+.count::before {
     content: counter(line-count);
+}
+
+.code .counter
+{
+    user-select: none !important;
+    margin-right: 10px;
 }

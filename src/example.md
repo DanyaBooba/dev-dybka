@@ -1,29 +1,12 @@
 ---
-layout: "post.njk"
+layout: "courses/course.njk"
 ---
 
 <div class="container">
-    <pre>
-        <span class="d-flex">
-            <div class="d-flex flex-column me-3" style="user-select: none !important">
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-                <span class="count"></span>
-            </div>
+    <span class="d-flex code">
+        <div class="d-flex flex-column counter">
+            <span class="count"></span>
+        </div>
 
 ```C#
 using System.Collections;
@@ -45,7 +28,5 @@ public class PlayerMovable : MonoBehaviour
 
 }
 ```
-
-</pre>
 
 </div>
