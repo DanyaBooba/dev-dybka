@@ -37,8 +37,6 @@ layout: "base.njk"
 {% include 'courses/course-bottom.njk' %}
 {% endif %}
 
-{% include 'footer.njk' %}
-
 {% if privatecourse %}
 <script src="/js/private-course.js"></script>
 <script>
@@ -49,3 +47,6 @@ layout: "base.njk"
 {% if final %}
 <script src="/js/final-course.js"></script>
 {% endif %}
+
+{% include 'footer.njk' %}
+<script src="/js/left-bar.js"></script>
