@@ -1,4 +1,6 @@
 function clearText(text) {
+	var text = text.toLowerCase();
+
 	return text;
 }
 
