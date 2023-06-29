@@ -32,3 +32,20 @@ main pre {
     padding: 20px;
     margin-bottom: 30px;
 }
+
+code,
+code p {
+    font-family: var(--bs-font-monospace) !important;
+}
+
+code p {
+    margin: 0 !important;
+}
+
+pre .count {
+    counter-increment: line-count;
+}
+
+pre .count::before {
+    content: counter(line-count);
+}
