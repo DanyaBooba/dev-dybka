@@ -6,6 +6,10 @@ layout: "courses/course.njk"
     <span class="d-flex code">
         <div class="d-flex flex-column counter">
             <span class="count"></span>
+            <span class="count"></span>
+            <span class="count"></span>
+            <span class="count"></span>
+            <span class="count"></span>
         </div>
 
 ```C#

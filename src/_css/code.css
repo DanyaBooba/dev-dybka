@@ -27,16 +27,17 @@
 }
 
 main pre {
-    border-radius: var(--border-radius-2);
+    /* border-radius: var(--border-radius-2); */
     background: var(--bg-light-3);
     /* padding: 20px; */
     width: 100%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 code,
 code p {
     font-family: var(--bs-font-monospace) !important;
+    font-size: 16px !important;
 }
 
 code p {
@@ -56,4 +57,5 @@ code p {
 {
     user-select: none !important;
     margin-right: 10px;
+    font-size: 16px;
 }
