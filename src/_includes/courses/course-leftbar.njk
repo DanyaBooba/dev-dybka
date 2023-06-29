@@ -2,12 +2,12 @@
     <div class="leftbar-row">
         <div class="col">
             <button onClick="hideLeftMenu()" class="leftbar-btn leftbar-flex">
-                <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#chevron-bar-left"></use></svg>Скрыть меню
+                <svg width="32" height="32" style="margin-right: 10px"><use xlink:href="/img/icons/icons.svg#chevron-bar-left"></use></svg>Скрыть меню
             </button>
         </div>
         <div class="col">
             <a href="/courses/{{ lesson.url }}/" class="leftbar-btn leftbar-flex">
-                <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
+                <svg width="32" height="32" style="margin-right: 10px"><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
             </a>
         </div>
         {% if lesson.github %}
