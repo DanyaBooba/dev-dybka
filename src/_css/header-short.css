@@ -1,0 +1,17 @@
+.header.header-short {
+    margin-bottom: 30px;
+    padding: 20px 0;
+}
+
+/* Logo */
+
+.header.header-short .logo span {
+    font-family: HalvarBreit;
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+.header.header-short .logo svg {
+    width: 48px;
+    height: 48px;
+}
