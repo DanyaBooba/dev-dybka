@@ -30,9 +30,4 @@ function AddID() {
 	}
 }
 
-function AddHash() {
-	console.log("hash");
-}
-
 AddID();
-AddHash();
