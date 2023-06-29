@@ -4,11 +4,12 @@
 		"url": "unity",
 		"name": "Разработка на Unity",
 		"maxlesson": "10",
+		"github": "https://github.com/DanyaBooba/UnityEducation",
 		"tags": [
 			"Unity",
-			"123",
-			"123",
-			"123"
+			"C#",
+			"10 уроков",
+			"Проект"
 		],
 		"leftbar": [
 			{
