@@ -6,6 +6,16 @@ info: "active"
 
 Здравствуйте, добро пожаловать на курс по разработке игр на игровом движке Unity!
 
+<div class="container px-0 mb-2">
+    <div class="content-row">
+        <div class="col">
+            <a href="/courses/{{ lesson.url }}/1" class="content-btn-start content-flex">
+                <svg width="32" height="32" style="margin-right: 10px"><use xlink:href="/img/icons/icons.svg#check2"></use></svg>Начать курс
+            </a>
+        </div>
+    </div>
+</div>
+
 ## Начало курса
 
 Данный курс подходит для новичков в программировании и разработке игр. Для начала курса вам не требуется
