@@ -6,9 +6,16 @@ function EditContent() {
 		// console.log(pre.innerHTML);
 
 		var html = pre.innerHTML;
-		console.log(html);
+		var len = html.slice(0, -7).split("\n").length;
+		var str = "";
+		for (i = 1; i < len; i++) {
+			str += "<span class='count'></span>";
+		}
+
 		pre.innerHTML =
-			"<div class='container px-0'><span class='d-flex code'><div class='d-flex flex-column counter'><span class='count'></span></div>" +
+			"<div class='container px-0'><span class='d-flex code'><div class='d-flex flex-column counter'>" +
+			str +
+			"</div>" +
 			html +
 			"</span></div>";
 	}
