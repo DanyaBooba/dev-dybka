@@ -1,5 +1,9 @@
 function clearText(text) {
 	var text = text.toLowerCase();
+	text = text.replaceAll(" ", "-");
+	text = text.replaceAll(".", "");
+	text = text.replaceAll("«", "");
+	text = text.replaceAll("»", "");
 
 	return text;
 }
@@ -7,14 +11,16 @@ function clearText(text) {
 function AddID() {
 	var content = document.getElementById("postcontent").children;
 	for (i = 0; i < content.length; i++) {
+		var tag = content[i].tagName;
 		if (
-			content[i].tagName == "H2" ||
-			content[i].tagName == "H3" ||
-			content[i].tagName == "H4" ||
-			content[i].tagName == "H5" ||
-			content[i].tagName == "H6"
+			tag == "H2" ||
+			tag == "H3" ||
+			tag == "H4" ||
+			tag == "H5" ||
+			tag == "H6"
 		) {
-			console.log(clearText(content[i].textContent));
+			// console.log(clearText(content[i].textContent));
+			content[i].id = clearText(content[i].textContent);
 		}
 	}
 }
