@@ -2,16 +2,6 @@
 layout: "courses/course.njk"
 ---
 
-<div class="container">
-    <span class="d-flex code">
-        <div class="d-flex flex-column counter">
-            <span class="count"></span>
-            <span class="count"></span>
-            <span class="count"></span>
-            <span class="count"></span>
-            <span class="count"></span>
-        </div>
-
 ```C#
 using System.Collections;
 using System.Collections.Generic;
@@ -32,5 +22,3 @@ public class PlayerMovable : MonoBehaviour
 
 }
 ```
-
-</div>

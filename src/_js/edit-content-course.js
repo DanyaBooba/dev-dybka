@@ -3,7 +3,14 @@ function EditContent() {
 
 	for (i = 0; i < prelist.length; i++) {
 		var pre = prelist[i];
-		console.log(pre.innerHTML);
+		// console.log(pre.innerHTML);
+
+		var html = pre.innerHTML;
+		console.log(html);
+		pre.innerHTML =
+			"<div class='container px-0'><span class='d-flex code'><div class='d-flex flex-column counter'><span class='count'></span></div>" +
+			html +
+			"</span></div>";
 	}
 }
 
