@@ -22,12 +22,12 @@ function runOnKeys(func, ...codes) {
 function prevPage() {
 	var linkprev = document.getElementById("postprevlesson");
 	if (linkprev !== null) {
-		window.history.replaceState(null, null, linkprev.href + "#posttitle");
+		window.history.replaceState(null, null, linkprev.href + "#header");
 		location.reload();
 	} else {
 		var startlearn = document.getElementById("startlearn");
 		if (startlearn !== null) {
-			window.history.replaceState(null, null, startlearn.href + "#posttitle");
+			window.history.replaceState(null, null, startlearn.href + "#header");
 			location.reload();
 		}
 	}
@@ -36,12 +36,12 @@ function prevPage() {
 function nextPage() {
 	var linknext = document.getElementById("postnextlesson");
 	if (linknext !== null) {
-		window.history.replaceState(null, null, linknext.href + "#posttitle");
+		window.history.replaceState(null, null, linknext.href + "#header");
 		location.reload();
 	} else {
 		var startlearn = document.getElementById("startlearn");
 		if (startlearn !== null) {
-			window.history.replaceState(null, null, startlearn.href + "#posttitle");
+			window.history.replaceState(null, null, startlearn.href + "#header");
 			location.reload();
 		}
 	}
