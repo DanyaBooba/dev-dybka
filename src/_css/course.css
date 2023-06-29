@@ -147,14 +147,13 @@
     fill: var(--text-default);
     width: 24px;
     height: 24px;
-    margin-left: 5px;
 }
 
 .course-mainpage .github svg {
     fill: var(--text-default);
     width: 20px !important;
     height: 20px !important;
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* Row */
