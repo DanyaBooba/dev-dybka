@@ -6,6 +6,10 @@
     border-radius: var(--border-radius-1) !important;
     color: var(--text-default);
     transition: var(--delay-2);
+
+    background: var(--bg-color);
+    --bs-list-group-action-hover-bg: var(--bs-tertiary-bg-me-2);
+    --bs-list-group-action-active-bg: var(--bs-secondary-bg-me);
 }
 
 .list-group p {
@@ -15,20 +19,14 @@
 
 /* Hover */
 
-.list-group-item:hover.list-group-item:not(.active) {
-    color: #000 !important;
+.list-group-item:hover,
+.list-group-item:focus {
+    color: var(--text-default) !important;
 }
 
-.list-group-item:hover.list-group-item:not(.active) svg {
-    fill: #000 !important;
-}
-
-.list-group-item:hover.active {
+.list-group-item.active:hover,
+.list-group-item.active:focus {
     color: #fff !important;
-}
-
-.list-group-item:hover.active svg {
-    fill: #fff !important;
 }
 
 /* Disabled */

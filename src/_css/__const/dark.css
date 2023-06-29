@@ -32,4 +32,7 @@
     --bg-theme-color: #333;
     --bs-btn-active-bg: #fff !important;
     --bs-border-color: #252239 !important;
+
+    --bs-tertiary-bg-me-2: #2E2A4D;
+    --bs-secondary-bg-me: #403B66;
 }
