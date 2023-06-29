@@ -1,9 +1,22 @@
 .code-copy {
-    margin-bottom: 20px;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
     width: 170px;
     padding: 10px;
     border-radius: var(--border-radius-1);
     background: var(--bg-color-rgba-3);
+
+    font-family: Geologica-Light;
+}
+
+.code-copy:hover,
+.code-copy:focus {
+    background: var(--bg-light-1);
 }
 
 .code-copy button {

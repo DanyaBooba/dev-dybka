@@ -3,21 +3,23 @@ function EditContent() {
 
 	for (i = 0; i < prelist.length; i++) {
 		var pre = prelist[i];
-		// console.log(pre.innerHTML);
 
 		var html = pre.innerHTML;
 		var len = html.slice(0, -7).split("\n").length;
 		var str = "";
-		for (i = 1; i < len; i++) {
+		for (j = 1; j < len; j++) {
 			str += "<span class='count'></span>";
 		}
+
+		console.log(prelist[i]);
 
 		pre.innerHTML =
 			"<div class='container px-0'><span class='d-flex code'><div class='d-flex flex-column counter'>" +
 			str +
 			"</div>" +
 			html +
-			"</span></div>";
+			"</span></div>" +
+			"<button onClick=CopyCode('tocopycode') class='code-copy'><svg><use xlink:href='/img/icons/icons.svg#clipboard'></use></svg>Скопировать</button>";
 	}
 }
 
