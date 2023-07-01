@@ -12,13 +12,13 @@ main a {
     text-decoration: none;
     margin: 0;
     padding: 0;
-    border-bottom: 2px solid var(--text-color-4);
+    border-bottom: 1px solid var(--text-color-4);
 }
 
 main a:hover,
 main a:focus {
     color: var(--text-default) !important;
-    border-bottom: 2px solid var(--text-default);
+    border-bottom: 1px solid var(--text-default);
 }
 
 main li {
