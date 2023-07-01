@@ -10,16 +10,17 @@ layout: "base.njk"
             {% include "courses/course-leftbar.njk" %}
         </div>
         <div class="col-md-8 content" id="lessonrightcontent">
+
             <div class="d-none see-at-pc mb-2" id="lessonbuttonmenu">
                 <div class="d-flex">
                     <button type="button" onClick="getShort()" class="btn-openmenu">
                         <svg><use xlink:href="/img/icons/icons.svg#chevron-bar-right"></use></svg>Открыть меню
                     </button>
-                    <a href="" onClick="getShort()" class="btn-openmenu">
+                    <a id="maincontent_buttoninfo" href="/courses/{{ lesson.url }}" class="btn-openmenu">
                         <svg><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
                     </a>
                     {% if lesson.github %}
-                    <button type="button" onClick="getShort()" class="btn-openmenu btn-openmenu-github">
+                    <button type="button" class="btn-openmenu btn-openmenu-github">
                         <svg><use xlink:href="/img/icons/icons.svg#github"></use></svg>GitHub
                     </button>
                     {% endif %}

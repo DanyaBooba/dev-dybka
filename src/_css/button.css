@@ -38,3 +38,14 @@
     background: var(--bs-tertiary-bg-me);
     border-radius: var(--border-radius-2);
 }
+
+/* Active */
+
+.btn-openmenu.active {
+    background: var(--color-primary);
+    color: #fff !important;
+}
+
+.btn-openmenu.active svg {
+    fill: #fff !important;
+}
