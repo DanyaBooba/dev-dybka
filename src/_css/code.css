@@ -9,14 +9,14 @@
     width: 170px;
     padding: 10px;
     border-radius: var(--border-radius-1);
-    background: var(--bg-color-rgba-3);
+    background: var(--color-danger);
 
     font-family: Geologica-Light;
 }
 
 .code-copy:hover,
 .code-copy:focus {
-    background: var(--bg-light-1);
+    background: var(--color-danger-hover);
 }
 
 .code-copy button {
@@ -59,6 +59,8 @@ code p {
 .count {
     counter-increment: line-count;
     color: var(--text-color-2);
+    text-align: end;
+    font-family: monospace;
 }
 
 .count::before {

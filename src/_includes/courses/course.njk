@@ -20,9 +20,9 @@ layout: "base.njk"
                         <svg><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
                     </a>
                     {% if lesson.github %}
-                    <button type="button" class="btn-openmenu btn-openmenu-github">
+                    <a href="{{ lesson.github }}" target="_blank" class="btn-openmenu btn-openmenu-github">
                         <svg><use xlink:href="/img/icons/icons.svg#github"></use></svg>GitHub
-                    </button>
+                    </a>
                     {% endif %}
                 </div>
             </div>
