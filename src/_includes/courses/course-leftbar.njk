@@ -6,7 +6,7 @@
             </button>
         </div>
         <div class="col">
-            <a href="/courses/{{ lesson.url }}/" class="leftbar-btn leftbar-flex">
+            <a id="leftbar_buttoninfo" href="/courses/{{ lesson.url }}/" class="leftbar-btn leftbar-flex">
                 <svg width="32" height="32" style="margin-right: 10px"><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
             </a>
         </div>
@@ -28,7 +28,7 @@
     </a>
     {% endfor %}
 
-    <a href="/courses/unity/11" class="list-group-item list-group-item-action {{ final }}">
+    <a id="leftbar_final" href="/courses/{{ lesson.url }}/final" class="list-group-item list-group-item-action {{ final }}">
         Завершение
     </a>
 </div>

@@ -19,6 +19,30 @@
     border: 0 !important;
 }
 
+/* Active */
+
+.leftbar-row .leftbar-btn.active  {
+    background: var(--color-primary);
+    border-radius: var(--border-radius-2);
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    color: #fff !important;
+
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.leftbar-row .leftbar-btn.active svg {
+    fill: #fff !important;
+}
+
+/* Flex */
+
 .leftbar-row .leftbar-flex {
     display: flex;
     justify-content: center;
