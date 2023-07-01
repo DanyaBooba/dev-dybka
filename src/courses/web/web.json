@@ -4,7 +4,6 @@
 		"url": "web",
 		"name": "Разработка сайта. Основа",
 		"maxlesson": "5",
-		"github": "https://github.com/DanyaBooba/WebProjects",
         "private": "true",
         "privateid": 1,
 		"tags": [

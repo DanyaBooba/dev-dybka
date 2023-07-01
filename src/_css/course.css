@@ -7,6 +7,10 @@
     height: 300px;
 }
 
+.course-mainpage .bottom .row p {
+    display: none !important;
+}
+
 .course-color-1 {
     border: 0px !important;
     background: var(--bg-light-1);

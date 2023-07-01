@@ -13,7 +13,7 @@ mainunitycourses:
 mainwebcourses:
   - name: "Разработка сайта. Основа"
     link: "web"
-    github: "https://github.com/DanyaBooba/WebProjects"
+    private: "true"
     popups:
       - HTML
       - CSS

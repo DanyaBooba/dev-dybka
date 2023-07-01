@@ -10,8 +10,13 @@
         </div>
         <div class="bottom">
             <div class="open">
+                {% if not course.private %}
                 <a href="/courses/{{ course.link }}/1/">Открыть курс<svg><use xlink:href="/img/icons/icons.svg#play"></use></svg></a>
+                {% else %}
+                <a href="/courses/{{ course.link }}/1/">Закрытый курс<svg><use xlink:href="/img/icons/icons.svg#lock"></use></svg></a>
+                {% endif %}
             </div>
+            {% if course.github %}
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="more">
                     <a href="/courses/{{ course.link }}/"><svg><use xlink:href="/img/icons/icons.svg#info"></use></svg>Подробнее</a>
@@ -20,6 +25,11 @@
                     <a href="{{ course.github }}" target="_blank"><svg><use xlink:href="/img/icons/icons.svg#github"></use></svg>GitHub</a>
                 </div>
             </div>
+            {% else %}
+            <div class="more">
+                <a href="/courses/{{ course.link }}/"><svg><use xlink:href="/img/icons/icons.svg#info"></use></svg>Подробнее</a>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>
