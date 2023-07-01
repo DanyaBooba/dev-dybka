@@ -26,6 +26,8 @@ function OpenCourse(course, lesson) {
 
 					if (dom !== null) {
 						if (dom.split(" ")[0] != "error") {
+							localStorage.setItem("course" + course, code);
+
 							content.innerHTML = dom;
 							localStorage.setItem("course" + course, code);
 						}
