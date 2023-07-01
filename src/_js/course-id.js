@@ -10,6 +10,8 @@ function clearText(text) {
 
 function AddID() {
 	var content = document.getElementById("postcontent").children;
+	if (content === null) return;
+
 	for (i = 0; i < content.length; i++) {
 		var tag = content[i].tagName;
 		if (

@@ -68,20 +68,19 @@ layout: "base.njk"
 {% endif %}
 
 {% if lesson.private %}
-<script src="/js/private-course.js"></script>
+<script src="/js/course-private.js"></script>
 <script>
     OpenCourse({{ lesson.privateid }}, {{ privatelesson }});
 </script>
 {% endif %}
 
 {% if final %}
-<script src="/js/final-course.js"></script>
+<script src="/js/course-final.js"></script>
 {% endif %}
 
 {% include 'footer.njk' %}
-<script src="/js/left-bar.js"></script>
-<script src="/js/menu.js"></script>
-<script src="/js/scroll.js"></script>
-<script src="/js/hot-keys.js"></script>
 <script src="/js/course-id.js"></script>
-<script src="/js/edit-content-course.js"></script>
+<script src="/js/course-hotkeys.js"></script>
+<script src="/js/course-leftbar.js"></script>
+<script src="/js/course-showmenu.js"></script>
+<script src="/js/course-scrollbar.js"></script>

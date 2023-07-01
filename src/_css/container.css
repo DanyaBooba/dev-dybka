@@ -1,0 +1,8 @@
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}

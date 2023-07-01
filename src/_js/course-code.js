@@ -44,7 +44,7 @@ function EditContent() {
 function CopyCode(id) {
 	var code = document.getElementById(id);
 	if (code !== null) {
-		navigator.clipboard.writeText(code.textContent.slice(11));
+		navigator.clipboard.writeText(code.textContent);
 	}
 }
 
