@@ -1,16 +1,13 @@
 var leftbar = document.getElementById("leftbar").children;
 var buttoninfo = document.getElementById("leftbar_buttoninfo");
 var contentbuttoninfo = document.getElementById("maincontent_buttoninfo");
-var url = window.location.href.split("/");
+var furl = window.location.href.split("/");
 
-url.shift();
-url.shift();
-url.shift();
-url.shift();
-url.shift();
-url = url[0];
+furl[4] = "info";
+url = furl[furl.length - 2];
+console.log(furl);
 
-if (url === "" && buttoninfo !== null && contentbuttoninfo !== null) {
+if (url === "info" && buttoninfo !== null && contentbuttoninfo !== null) {
 	buttoninfo.classList.add("active");
 	contentbuttoninfo.classList.add("active");
 }
