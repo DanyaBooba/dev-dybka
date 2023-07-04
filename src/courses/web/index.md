@@ -1,5 +1,4 @@
 ---
-layout: "courses/course.njk"
+layout: "courses/course-pageprivate.njk"
 private: "true"
 ---
-

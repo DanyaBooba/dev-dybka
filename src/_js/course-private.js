@@ -1,40 +1,23 @@
-function OpenCourse(course, lesson) {
-	var content = document.getElementById("postcontent");
-	var codecontent = document.getElementById("privatecoursecode");
+function CheckCourse(code) {
+	var input = document.getElementById("inputcode");
+	input.value = code;
 
-	var code =
-		new URL(window.location.href).searchParams.get("c") ||
-		localStorage.getItem("course" + course);
+	var url = new URL(window.location.href);
+	url.searchParams.delete("code");
+	window.history.replaceState(null, null, url.href);
 
-	if (code !== null) {
-		(function () {
-			var http = new XMLHttpRequest();
-			http.open(
-				"GET",
-				"http://localhost/api/course/?k=" +
-					course +
-					"&ls=" +
-					lesson +
-					"&c=" +
-					code
-			);
-			http.onreadystatechange = function () {
-				if (this.readyState == 4 && this.status == 200) {
-					var dom = new DOMParser()
-						.parseFromString(this.responseText, "text/html")
-						.getElementsByTagName("body")[0].innerHTML;
-
-					if (dom !== null) {
-						if (dom.split(" ")[0] != "error") {
-							localStorage.setItem("course" + course, code);
-
-							content.innerHTML = dom;
-							localStorage.setItem("course" + course, code);
-						}
-					}
-				}
-			};
-			http.send(null);
-		})();
+	if (code === null) {
+		return;
 	}
+
+	var request = new XMLHttpRequest();
+	request.open("GET", code, true);
+	request.onreadystatechange = function () {
+		if (request.readyState === 4) {
+			if (request.status !== 404) {
+				console.log("need open");
+				request.send();
+			}
+		}
+	};
 }
