@@ -6,7 +6,7 @@
             </button>
         </div>
         <div class="col">
-            <a id="leftbar_buttoninfo" href="/courses/{{ lesson.url }}/" class="leftbar-btn leftbar-flex">
+            <a id="leftbar_buttoninfo" href="/courses/{{ lesson.fullurl }}/" class="leftbar-btn leftbar-flex">
                 <svg width="32" height="32" style="margin-right: 10px"><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
             </a>
         </div>
@@ -23,12 +23,12 @@
 <div id="leftbar" class="list-group list-group-flush">
 
     {% for bar in lesson.leftbar %}
-    <a id="leftbar_{{ bar.id }}" href="/courses/{{ lesson.url }}/{{ bar.id }}" class="list-group-item list-group-item-action">
+    <a id="leftbar_{{ bar.id }}" href="/courses/{{ lesson.fullurl }}/{{ bar.id }}" class="list-group-item list-group-item-action">
         {{ bar.id }}. {{ bar.name }}
     </a>
     {% endfor %}
 
-    <a id="leftbar_final" href="/courses/{{ lesson.url }}/final" class="list-group-item list-group-item-action {{ final }}">
+    <a id="leftbar_final" href="/courses/{{ lesson.fullurl }}/final" class="list-group-item list-group-item-action {{ final }}">
         Завершение
     </a>
 </div>

@@ -2,6 +2,7 @@
 	"layout": "courses/course.njk",
 	"lesson": {
 		"url": "web",
+		"fullurl": "web/134691",
 		"name": "Разработка сайта. Основа",
 		"maxlesson": "5",
         "private": "true",

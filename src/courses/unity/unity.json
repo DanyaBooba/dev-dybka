@@ -2,6 +2,7 @@
 	"layout": "courses/course.njk",
 	"lesson": {
 		"url": "unity",
+		"fullurl": "unity",
 		"name": "Разработка на Unity",
 		"maxlesson": "10",
 		"github": "https://github.com/DanyaBooba/UnityEducation",
