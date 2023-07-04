@@ -1,3 +1,5 @@
 ---
-privatelesson: -1
+layout: "courses/course.njk"
+private: "true"
 ---
+
