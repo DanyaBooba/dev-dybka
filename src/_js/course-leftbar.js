@@ -3,7 +3,7 @@ var buttoninfo = document.getElementById("leftbar_buttoninfo");
 var contentbuttoninfo = document.getElementById("maincontent_buttoninfo");
 var furl = window.location.href.split("/");
 
-furl[4] = "info";
+// furl[4] = "info";
 url = furl[furl.length - 2];
 console.log(furl);
 

@@ -1,5 +1,6 @@
 function ChangeCertificate() {
 	var img = document.getElementById("certificate");
+	if (img === null) return;
 	var a = img.src.split("/");
 
 	var httpurl = a.shift();
