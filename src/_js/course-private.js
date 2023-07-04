@@ -1,4 +1,8 @@
 function CheckCourse(code) {
+	if (code === null) {
+		return;
+	}
+
 	var input = document.getElementById("inputcode");
 	input.value = code;
 
@@ -6,20 +10,20 @@ function CheckCourse(code) {
 	url.searchParams.delete("code");
 	window.history.replaceState(null, null, url.href);
 
-	if (code === null) {
-		return;
-	}
-
-	console.log(code);
 	var request = new XMLHttpRequest();
 	request.open("GET", code, true);
 	request.onreadystatechange = function () {
-		console.log("1");
 		if (request.readyState === 4) {
 			if (request.status !== 404) {
-				console.log("need open");
-				request.send();
+				// console.log(url.href + code + "#header");
+
+				window.history.replaceState(null, null, url.href + code + "#header");
+				location.reload();
+			} else {
+				return;
 			}
 		}
 	};
+
+	request.send();
 }

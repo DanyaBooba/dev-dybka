@@ -50,10 +50,6 @@ layout: "base.njk"
 
             <div id="postcontent">
                 {{ content | safe }}
-
-                {% if lesson.private %}
-                {% include "courses/course-private.njk" %}
-                {% endif %}
             </div>
 
             {% if next or prev or nextEnd %}
@@ -65,13 +61,6 @@ layout: "base.njk"
 
 {% if not info %}
 {% include 'courses/course-bottom.njk' %}
-{% endif %}
-
-{% if lesson.private %}
-<script src="/js/course-private.js"></script>
-<script>
-    OpenCourse({{ lesson.privateid }}, {{ privatelesson }});
-</script>
 {% endif %}
 
 {% if final %}
