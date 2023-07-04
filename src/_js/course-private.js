@@ -10,9 +10,11 @@ function CheckCourse(code) {
 		return;
 	}
 
+	console.log(code);
 	var request = new XMLHttpRequest();
 	request.open("GET", code, true);
 	request.onreadystatechange = function () {
+		console.log("1");
 		if (request.readyState === 4) {
 			if (request.status !== 404) {
 				console.log("need open");
