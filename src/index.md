@@ -13,10 +13,10 @@ mainunitycourses:
 mainwebcourses:
   - name: "Разработка сайта. Основа"
     link: "web"
-    private: "true"
     popups:
       - HTML
       - CSS
+      - Сайт
 ---
 
 {% include "header.njk" %}

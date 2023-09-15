@@ -10,11 +10,7 @@
         </div>
         <div class="bottom">
             <div class="open">
-                {% if not course.private %}
                 <a href="/courses/{{ course.link }}/1/">Открыть курс<svg><use xlink:href="/img/icons/icons.svg#play"></use></svg></a>
-                {% else %}
-                <a href="/courses/{{ course.link }}/">Закрытый курс<svg><use xlink:href="/img/icons/icons.svg#lock"></use></svg></a>
-                {% endif %}
             </div>
             {% if course.github %}
             <div class="row row-cols-1 row-cols-lg-2">
