@@ -2,7 +2,7 @@
     border: 0 !important;
     text-decoration: none !important;
 
-    color: var(--text-color-3) !important;
+    color: var(--bg-color) !important;
     transition: .5s;
 }
 
