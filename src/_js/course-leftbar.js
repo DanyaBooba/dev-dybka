@@ -3,11 +3,10 @@ var buttoninfo = document.getElementById("leftbar_buttoninfo");
 var contentbuttoninfo = document.getElementById("maincontent_buttoninfo");
 var furl = window.location.href.split("/");
 
-// furl[4] = "info";
-url = furl[furl.length - 2];
+url = furl[5];
 console.log(furl);
 
-if (url === "info" && buttoninfo !== null && contentbuttoninfo !== null) {
+if (url === "" && buttoninfo !== null && contentbuttoninfo !== null) {
 	buttoninfo.classList.add("active");
 	contentbuttoninfo.classList.add("active");
 }
