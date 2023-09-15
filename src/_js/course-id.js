@@ -21,7 +21,6 @@ function AddID() {
 			tag == "H5" ||
 			tag == "H6"
 		) {
-			// console.log(clearText(content[i].textContent));
 			content[i].id = clearText(content[i].textContent);
 			content[i].innerHTML =
 				content[i].textContent +

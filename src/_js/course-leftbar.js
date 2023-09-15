@@ -4,7 +4,6 @@ var contentbuttoninfo = document.getElementById("maincontent_buttoninfo");
 var furl = window.location.href.split("/");
 
 url = furl[5];
-console.log(furl);
 
 if (url === "" && buttoninfo !== null && contentbuttoninfo !== null) {
 	buttoninfo.classList.add("active");

@@ -12,8 +12,6 @@ function EditContent() {
 			str += "<span class='count'></span>";
 		}
 
-		// console.log(prelist[i]);
-
 		pre.innerHTML =
 			"<div class='container px-0'><span class='d-flex code'><div class='d-flex flex-column counter'>" +
 			str +
