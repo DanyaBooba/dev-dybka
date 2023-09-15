@@ -1,10 +1,10 @@
 {
 	"layout": "courses/course.njk",
 	"lesson": {
-		"url": "unity",
+		"url": "web",
 		"name": "Разработка на Unity",
 		"maxlesson": "10",
-		"github": "https://github.com/DanyaBooba/UnityEducation",
+		"github": "https://github.com/DanyaBooba/#",
 		"tags": [
 			"Unity",
 			"C#",

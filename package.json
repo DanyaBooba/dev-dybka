@@ -4,7 +4,7 @@
   "description": "dev-dybka",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "start": "eleventy --serve"
   },
   "repository": {
     "type": "git",
