@@ -1,6 +1,8 @@
 function EditContent() {
 	var prelist = document.getElementsByTagName("pre");
 
+	// Вставить вверху тип скрипта: C#, HTML...
+
 	count = 1;
 	for (i = 0; i < prelist.length; i++) {
 		var pre = prelist[i];
