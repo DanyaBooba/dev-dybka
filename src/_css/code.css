@@ -13,14 +13,14 @@
     width: 170px;
     padding: 10px;
     border-radius: var(--border-radius-1);
-    background: var(--color-danger);
+    background: var(--color-code-copy);
 
     font-family: Geologica-Light;
 }
 
 .code-copy:hover,
 .code-copy:focus {
-    background: var(--color-danger-hover);
+    background: var(--color-code-copy-hover);
 }
 
 .code-copy button {
@@ -54,6 +54,7 @@ main pre {
 code,
 code p {
     font-family: var(--bs-font-monospace) !important;
+    padding-right: 30px;
     /* font-size: 16px !important; */
 }
 

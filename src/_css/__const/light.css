@@ -30,6 +30,11 @@
     --color-primary: #0d6efd;
     --color-primary-hover: #0d6efd;
 
+    --color-code-copy: #d4e6d9;
+    --color-code-copy-hover: #C8FFDE;
+
+    --bottom-button: #fff;
+
     /* Bootstrap */
     --bs-tertiary-bg-me: #CFECF8 !important;
     --bg-theme-color: #dedede;
