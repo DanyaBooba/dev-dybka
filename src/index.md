@@ -13,7 +13,7 @@ mainunitycourses:
 
 mainwebcourses:
   - name: "Разработка сайта. Основа"
-    link: "web"
+    link: "website-development-base"
     popups:
       - HTML
       - CSS
