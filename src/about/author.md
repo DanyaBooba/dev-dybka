@@ -13,5 +13,3 @@ title: "Автор проекта Around"
 - [daniil@dybka.ru](mailto:daniil@dybka.ru)
 - [телеграм](https://ddybka.t.me)
 - [вконтакте](https://vk.com/ddybka)
-
-![Alt](https://dybka.ru/img/gosduma/box.jpg)
