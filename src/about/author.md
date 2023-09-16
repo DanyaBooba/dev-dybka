@@ -1,13 +1,17 @@
+---
+title: "Автор проекта Around"
+---
+
 # Об авторе
 
 ---
 
 ## Разработчик платформы
 
-Автор платформы: Дыбка Даниил. Связаться с автором:
+Автор платформы: Даниил Дыбка. Связаться с автором:
 
 - [daniil@dybka.ru](mailto:daniil@dybka.ru)
 - [телеграм](https://ddybka.t.me)
 - [вконтакте](https://vk.com/ddybka)
 
-![Alt](https://dybka.ru/img/baumanka/box2.jpg)
+![Alt](https://dybka.ru/img/gosduma/box.jpg)
