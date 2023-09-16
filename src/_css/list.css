@@ -3,7 +3,6 @@
 .list-group-item {
     font-size: 18px;
     padding: 15px 20px;
-    border-radius: var(--border-radius-1) !important;
     color: var(--text-default);
     transition: var(--delay-2);
 
@@ -15,6 +14,10 @@
 .list-group p {
     margin: 0 !important;
     padding: 0 !important;
+}
+
+.list-group-item.active {
+    border-radius: var(--border-radius-1) !important;
 }
 
 /* Hover */

@@ -14,7 +14,14 @@ function EditContent() {
 			str += "<span class='count'></span>";
 		}
 
+		var language = pre.childNodes[0].classList[0];
+
+		language = language.substring(9);
+
 		pre.innerHTML =
+			"<div class='language-type'>" +
+			language +
+			"</div>" +
 			"<div class='container px-0'><span class='d-flex code'><div class='d-flex flex-column counter'>" +
 			str +
 			"</div>" +
