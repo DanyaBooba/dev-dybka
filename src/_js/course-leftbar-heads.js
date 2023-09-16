@@ -28,9 +28,6 @@ function AddMobileHeads() {
 	var mobilebar = document.getElementById("mobileMenuHeads");
 	var heads = document.getElementById("leftbarheads");
 
-	console.log(mobilebar);
-	// heads.innerHTML
-
 	mobilebar.insertAdjacentHTML("afterbegin", heads.innerHTML);
 }
 
