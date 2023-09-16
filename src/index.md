@@ -1,5 +1,6 @@
 ---
 layout: "base.njk"
+title: "Курсы от Даниил Дыбка — быстро, просто и со вкусом"
 mainunitycourses:
   - name: "Основа Unity. Первый проект"
     link: "unity"
