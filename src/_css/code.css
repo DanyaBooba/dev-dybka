@@ -51,10 +51,13 @@ main pre {
     font-size: 16px !important;
 }
 
+main pre code {
+    padding-right: 30px;
+}
+
 code,
 code p {
     font-family: var(--bs-font-monospace) !important;
-    padding-right: 30px;
     /* font-size: 16px !important; */
 }
 

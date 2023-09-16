@@ -15,8 +15,6 @@ function AddLeftBarHeads() {
 		var headText = head.textContent.slice(0, -2);
 		var headLink = hash.href;
 
-		console.log(headLink);
-
 		elems += "<li><a href='" + headLink + "'>" + headText + "</a></li>";
 	}
 
