@@ -3,7 +3,7 @@ layout: "base.njk"
 title: "Курсы от Даниил Дыбка — быстро, просто и со вкусом"
 mainunitycourses:
   - name: "Основа Unity. Первый проект"
-    link: "unity"
+    link: "the-basis-of-unity-the-first-project"
     github: "https://github.com/DanyaBooba/UnityEducation"
     popups:
       - Unity

@@ -1,7 +1,7 @@
 {
 	"layout": "courses/course.njk",
 	"lesson": {
-		"url": "web",
+		"url": "website-development-base",
 		"name": "Разработка на Unity",
 		"maxlesson": "10",
 		"tags": [

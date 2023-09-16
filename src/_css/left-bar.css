@@ -21,7 +21,7 @@
 
 /* Active */
 
-.leftbar-row .leftbar-btn.active  {
+.leftbar-row .leftbar-btn.active {
     background: var(--color-primary);
     border-radius: var(--border-radius-2);
     padding: 10px;
@@ -90,6 +90,12 @@
     margin-bottom: 10px;
 }
 
+.content-row .content-btn.active {
+    background: var(--color-primary) !important;
+    color: #fff !important;
+    fill: #fff !important;
+}
+
 .content-row .content-btn:hover {
     background: var(--bs-tertiary-bg-me);
     text-decoration: none !important;
@@ -118,6 +124,7 @@
     text-decoration: none !important;
     border: 0 !important;
 }
+
 .content-row .content-flex {
     display: flex;
     justify-content: center;
@@ -148,8 +155,7 @@
     }
 }
 
-.leftbar-margin
-{
+.leftbar-margin {
     margin-bottom: 30px;
 }
 

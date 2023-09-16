@@ -1,7 +1,7 @@
 {
 	"layout": "courses/course.njk",
 	"lesson": {
-		"url": "unity",
+		"url": "the-basis-of-unity-the-first-project",
 		"name": "Разработка на Unity",
 		"maxlesson": "10",
 		"github": "https://github.com/DanyaBooba/UnityEducation",
