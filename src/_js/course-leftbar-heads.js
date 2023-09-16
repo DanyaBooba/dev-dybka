@@ -19,9 +19,20 @@ function AddLeftBarHeads() {
 	}
 
 	var list = "<ul>" + elems + "</ul>";
-	var str = "<div class='leftbar-heads'>" + list + "</div>";
+	var str = "<div class='leftbar-heads' id='leftbarheads'>" + list + "</div>";
 
 	leftbar.insertAdjacentHTML("beforeend", str);
 }
 
+function AddMobileHeads() {
+	var mobilebar = document.getElementById("mobileMenuHeads");
+	var heads = document.getElementById("leftbarheads");
+
+	console.log(mobilebar);
+	// heads.innerHTML
+
+	mobilebar.insertAdjacentHTML("afterbegin", heads.innerHTML);
+}
+
 AddLeftBarHeads();
+AddMobileHeads();

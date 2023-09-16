@@ -29,7 +29,7 @@
     right: 14px;
 }
 
-.fixed-bottom-right button {
+/* .fixed-bottom-right button {
     padding: 0;
     border: none;
     font: inherit;
@@ -43,9 +43,9 @@
 
     transition: 0s !important;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
-}
+} */
 
-.fixed-bottom-right a {
+.fixed-bottom-right button {
     padding: 0;
     border: none;
     font: inherit;
@@ -54,8 +54,8 @@
     cursor: pointer;
 
     background-color: var(--bottom-button) !important;
-    padding: 20px 15px;
-    border-radius: var(--border-radius-3);
+    padding: 14px;
+    border-radius: 100px;
 
     transition: 0s !important;
     /* box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important; */
@@ -63,8 +63,8 @@
 }
 
 .fixed-bottom-right svg {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     fill: var(--text-default);
 
     transition: 0s !important;

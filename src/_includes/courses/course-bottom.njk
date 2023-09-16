@@ -1,42 +1,17 @@
-<nav id="bottompc" class="navbar mt-5 course-bottom see-at-pc sticky-bottom">
-    <div class="progress-container"><div class="progress-bar" id="myBar"></div></div>
-    <div class="container d-flex align-items-center">
-        <div id="coursebottomprev" class="d-none">
-            <button onClick="prevPage()">
-                <svg class="svg-button"><use xlink:href="/img/icons/icons.svg#arrow-left-short"></use></svg>
-            </button>
-        </div>
-        <div id="coursebottomnext" class="d-none">
-            <button onClick="nextPage()">
-                <svg class="svg-button"><use xlink:href="/img/icons/icons.svg#arrow-right-short"></use></svg>
-            </button>
-        </div>
-        <div class="title h4 mb-0" id="bottomposttitle"></div>
-        <div class="ms-auto">
-            <a href="#header" aria-label="Перейти наверх страницы">
-                <svg class="svg-link"><use xlink:href="/img/icons/icons.svg#arrow-up-short"></use></svg>
-            </a>
-            <button onClick="closeBottom()">
-                <svg class="svg-button"><use xlink:href="/img/icons/icons.svg#x"></use></svg>
-            </button>
-        </div>
-    </div>
-</nav>
-
-<div id="bottompcclosed" class="fixed-bottom-right d-none see-at-pc">
-    <button class="btn" type="button" onClick="openBottom()">
-        <svg><use xlink:href="/img/icons/icons.svg#chevron-bar-up"></use></svg>
+<div class="fixed-bottom-right right-3 see-at-mobile">
+    <button type="button" data-bs-toggle="offcanvas" data-bs-target="#bottomMobileMenu" aria-controls="bottomMobileMenu">
+        <svg><use xlink:href="/img/icons/icons.svg#paragraph"></use></svg>
     </button>
 </div>
 
-<div id="mobilecoursebottomprev" class="fixed-bottom-right right-2 see-at-mobile d-none">
-    <a id="mobilecoursebottomprev_link" href="#">
-        <svg><use xlink:href="/img/icons/icons.svg#arrow-left-short"></use></svg>
-    </a>
-</div>
-
-<div id="mobilecoursebottomnext" class="fixed-bottom-right right-3 see-at-mobile d-none">
-    <a id="mobilecoursebottomnext_link" href="#">
-        <svg><use xlink:href="/img/icons/icons.svg#arrow-right-short"></use></svg>
-    </a>
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="bottomMobileMenu" aria-labelledby="bottomMobileMenuLabel" style="height: 300px">
+  <div class="offcanvas-header d-flex">
+    <button type="button" class="btn ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+        <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#x"></use></svg>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="mobile-menu-heads" id="mobileMenuHeads">
+    </div>
+  </div>
 </div>
