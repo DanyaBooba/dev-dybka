@@ -1,7 +1,7 @@
 ---
 layout: "base.njk"
 title: "Курсы от Даниил Дыбка — быстро, просто и со вкусом"
-mainunitycourses:
+maincourses:
   - name: "Основа Unity. Первый проект"
     link: "the-basis-of-unity-the-first-project"
     github: "https://github.com/DanyaBooba/UnityEducation"
@@ -10,8 +10,6 @@ mainunitycourses:
       - C#
       - 10 уроков
       - Проект
-
-mainwebcourses:
   - name: "Разработка сайта. Основа"
     link: "website-development-base"
     popups:
@@ -23,15 +21,21 @@ mainwebcourses:
 {% include "header.njk" %}
 
 <main class="container mt-5">
-    <h2 class="main-title">Разработка на Unity</h2>
+    <h2 class="main-title">Бесплатные курсы</h2>
     <div class="row row-courses row-cols-1 row-cols-lg-3 g-3">
-        {%- for course in mainunitycourses -%}
+        {%- for course in maincourses -%}
             {% include 'courses/course-block.njk' %}
         {%- endfor -%}
     </div>
-    <h2 class="main-title">Веб-разработка</h2>
+    <h2 class="main-title">Задания</h2>
     <div class="row row-courses row-cols-1 row-cols-lg-3 g-3">
-        {%- for course in mainwebcourses -%}
+        {%- for course in mainexercise -%}
+            {% include 'courses/course-block.njk' %}
+        {%- endfor -%}
+    </div>
+    <h2 class="main-title">Тестирования</h2>
+    <div class="row row-courses row-cols-1 row-cols-lg-3 g-3">
+        {%- for course in maintestes -%}
             {% include 'courses/course-block.njk' %}
         {%- endfor -%}
     </div>
