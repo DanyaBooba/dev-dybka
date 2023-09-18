@@ -146,10 +146,13 @@
 
 .content h1 {
     font-size: 60px;
+    letter-spacing: .1rem;
+    line-height: 4rem;
 }
 
 .content h2 {
     font-size: 40px;
+    line-height: 2.5rem;
 }
 
 .content h3 {
@@ -162,11 +165,13 @@
 .content h5,
 .content h6 {
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    letter-spacing: .1rem;
 }
 
 .content p {
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .content blockquote
@@ -228,7 +233,7 @@
 }
 
 .content p:has(img) {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     padding: 0;
 }
 
