@@ -181,6 +181,8 @@
     background: var(--bg-light-2);
     padding: 20px;
     margin-bottom: 30px;
+
+    border: 2px solid var(--bg-light-2-border);
 }
 
 .content blockquote p {
