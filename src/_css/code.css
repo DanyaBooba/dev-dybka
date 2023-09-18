@@ -10,17 +10,17 @@
     background-color: transparent;
     cursor: pointer;
 
-    width: 170px;
-    padding: 10px;
+    padding: 10px 16px;
     border-radius: var(--border-radius-1);
-    background: var(--color-code-copy);
+    background: var(--text-color-6);
 
     font-family: Geologica-Light;
+    font-size: 14px;
 }
 
 .code-copy:hover,
 .code-copy:focus {
-    background: var(--color-code-copy-hover);
+    background: var(--text-color-7);
 }
 
 .code-copy button {
@@ -33,20 +33,19 @@
 
     display: flex;
     align-items: center;
-
-    font-size: 16px;
 }
 
 .code-copy svg {
-    width: 24px;
-    height: 24px;
-    margin-right: 16px;
+    width: 20px;
+    height: 20px;
+    padding-bottom: 2px;
+    margin-right: 8px;
 }
 
 main pre {
     background: var(--bg-light-3);
     border-radius: var(--border-radius-2);
-    padding: 30px;
+    padding: 20px;
     width: 100%;
     font-size: 16px !important;
 }

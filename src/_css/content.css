@@ -148,6 +148,7 @@
     font-size: 60px;
     letter-spacing: .1rem;
     line-height: 4rem;
+    margin-bottom: 20px;
 }
 
 .content h2 {
@@ -189,8 +190,7 @@
 .content .code {
     border-radius: var(--border-radius-2);
     background: var(--bg-light-3);
-    /* padding: 20px; */
-    margin-bottom: 20px;
+    margin: 0 !important;
 }
 
 .content a {
@@ -253,7 +253,7 @@
 {
     background: var(--bg-warning);
     border-radius: var(--border-radius-2);
-    padding: 13px;
+    padding: 20px;
     margin-bottom: 30px;
     font-size: 20px;
 

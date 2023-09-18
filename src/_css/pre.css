@@ -1,6 +1,12 @@
-pre .language-type
+.language-type
 {
-    margin-bottom: 15px;
+    background: var(--text-color-6);
+    padding: 7px 20px;
+    border-radius: 12px;
     font-size: 16px;
     color: var(--text-color-2);
+}
+
+.pre-code {
+    margin-bottom: 10px;
 }

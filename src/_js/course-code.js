@@ -16,18 +16,32 @@ function EditContent() {
 
 		language = language.substring(9);
 
+		// "<div class='language-type'>" +
+		// 	language +
+		// 	"</div>" +
+
 		pre.innerHTML =
-			"<div class='language-type'>" +
-			language +
-			"</div>" +
 			"<div class='container px-0'><span class='d-flex code'><div class='d-flex flex-column counter'>" +
 			str +
 			"</div>" +
 			html +
-			"</span></div>" +
+			"</span></div>";
+
+		var predivlang =
+			"<div class='language-type me-auto'>" + language + "</div>";
+
+		var predivcopy =
 			"<button onClick=CopyCode('tocopycode" +
 			count +
 			"') class='code-copy'><svg><use xlink:href='/img/icons/icons.svg#clipboard'></use></svg>Скопировать</button>";
+
+		var prediv =
+			"<div class='pre-code'><div class='d-flex align-items-center'>" +
+			predivlang +
+			predivcopy +
+			"</div></div>";
+
+		pre.insertAdjacentHTML("beforebegin", prediv);
 
 		count += 1;
 	}
