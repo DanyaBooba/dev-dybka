@@ -3,8 +3,8 @@
     background: var(--text-color-6);
     padding: 8px 20px;
     border-radius: 12px;
-    font-size: 16px;
-    color: var(--text-color-2);
+    font-size: 14px;
+    color: var(--text-default);
 }
 
 .pre-code {
