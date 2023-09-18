@@ -241,12 +241,15 @@
 
 /* Lists */
 
+.content ol,
 .content ul {
     font-size: 20px;
 }
 
-.content ol {
-    font-size: 20px;
+.content ol li,
+.content ul li {
+    color: var(--text-color-4);
+    padding-left: 10px;
 }
 
 /* Warning */
