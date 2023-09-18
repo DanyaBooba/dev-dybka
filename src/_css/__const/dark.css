@@ -45,4 +45,7 @@
 
     --bs-tertiary-bg-me-2: #2E2A4D;
     --bs-secondary-bg-me: #403B66;
+
+    /* Border */
+    --bg-warning-border: #795e58;
 }

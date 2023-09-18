@@ -196,11 +196,11 @@
 .content a {
     color: var(--text-default);
     text-decoration: none;
-    border-bottom: 2px solid var(--text-color-4);
+    border-bottom: 1px solid var(--text-color-4);
 }
 
 .content a:hover {
-    border-bottom: 2px solid var(--text-default);
+    border-bottom: 1px solid var(--text-default);
 }
 
 /* Table  */
@@ -259,6 +259,8 @@
 
     display: flex;
     align-items: center;
+
+    border: 2px solid var(--bg-warning-border);
 }
 
 .content .warning svg {
@@ -270,5 +272,5 @@
 }
 
 .content .warning a {
-    border-bottom: 2px solid var(--text-default);
+    border-bottom: 1px solid var(--text-default);
 }
