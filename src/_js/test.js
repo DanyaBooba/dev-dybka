@@ -27,6 +27,22 @@ function MainTest(active) {
 
 function MainCheckNumber(number) {
 	console.log("NOW: " + number);
+
+	var block = document.getElementById("question_" + number).childNodes[0];
+
+	if (block.childNodes.length == 1) return;
+
+	var form = block.childNodes[1];
+
+	if (form.nodeName == "FORM") {
+		form.childNodes.forEach((input) => {
+			console.log(input);
+		});
+	}
+}
+
+function MakeActiveMenu() {
+	console.log("test");
 }
 
 function MainFinish() {
@@ -44,3 +60,5 @@ function MainFinish() {
 }
 
 MainTest(0);
+
+var currentnumbermenu = -1;
