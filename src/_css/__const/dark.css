@@ -53,4 +53,8 @@
 
     /* Open */
     --open-color-1: #656565;
+
+    /* Course Color */
+    --course-color-3: rgb(73, 95, 102);
+    --course-color-gradient-3: linear-gradient(45deg, rgba(73, 95, 102, 1) 0%, rgba(91, 121, 130, 1) 100%);
 }

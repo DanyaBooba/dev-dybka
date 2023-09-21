@@ -45,7 +45,9 @@
 
 .course-color-3 {
     border: 0px !important;
-    background: var(--bg-light-3);
+    /* background: var(--bg-light-3); */
+    background: var(--course-color-3);
+    background: var(--course-color-gradient-3);
 }
 
 /* Gradient Colors */
