@@ -1,6 +1,6 @@
 // Code
 
-function EditContent() {
+function EditCodeOnPage() {
 	var prelist = document.getElementsByTagName("pre");
 
 	count = 1;
@@ -448,7 +448,7 @@ function removeclass(item, name) {
 
 CheckBottom();
 CheckBottomMobile();
-EditContent();
+EditCodeOnPage();
 LeftBar();
 AddID();
 EditLinks();
