@@ -32,4 +32,4 @@ title: "Правила публикации"
 
 - [daniil@dybka.ru](mailto:daniil@dybka.ru)
 - [телеграм](https://ddybka.t.me)
-- [вконакте](https://vk.com/ddybka)
+- [вконтакте](https://vk.com/ddybka)

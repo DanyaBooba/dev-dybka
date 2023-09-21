@@ -13,4 +13,4 @@ function randomColor() {
 	return "course-color-" + Math.floor(Math.random() * 3 + 1);
 }
 
-changeColor();
+// changeColor();

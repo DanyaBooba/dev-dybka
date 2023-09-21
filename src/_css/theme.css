@@ -7,6 +7,12 @@
     padding: 1.5px;
 }
 
+@media(max-width: 260px) {
+    .theme-toggle {
+        display: none !important;
+    }
+}
+
 .theme-toggle .btn-secondary {
     --bs-btn-border-radius: 50px;
     padding: 0;

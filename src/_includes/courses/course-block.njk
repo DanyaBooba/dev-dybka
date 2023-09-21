@@ -1,8 +1,8 @@
 <div class="col">
-    <div class="course-mainpage d-flex flex-column">
+    <div class="course-mainpage course-color-{{ course.color }} d-flex flex-column">
         <div class="top mb-auto">
             <h3>{{ course.name }}</h3>
-            <div class="d-flex align-items-center flex-wrap">
+            <div class="popups d-flex align-items-center flex-wrap">
             {%- for item in course.popups -%}
                 <span>{{ item }}</span>
             {%- endfor -%}

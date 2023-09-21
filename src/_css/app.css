@@ -56,3 +56,8 @@ b {
     margin-bottom: 20px;
     margin-top: 50px;
 }
+
+li p {
+    margin: 0 !important;
+    padding: 0 !important;
+}

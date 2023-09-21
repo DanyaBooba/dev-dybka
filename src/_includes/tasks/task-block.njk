@@ -1,0 +1,23 @@
+<div class="col">
+    <div class="course-mainpage course-mainpage-task d-flex flex-column">
+        <div class="top mb-auto">
+            <div class="row">
+                <div class="col col-md-8">
+                    <h3>{{ task.name }}</h3>
+                </div>
+                <div class="popups col col-md-4">
+                    <div class="d-flex align-items-end flex-column flex-wrap">
+                    {%- for item in task.popups -%}
+                        <span class="w-100 text-center">{{ item }}</span>
+                    {%- endfor -%}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="open">
+                <a href="/tasks/{{ task.link }}/" class="mb-0">Открыть задание<svg><use xlink:href="/img/icons/icons.svg#play"></use></svg></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -118,10 +118,6 @@
         padding-top: 0 !important;
     }
 
-    .content h1 {
-        font-size: 30px !important;
-    }
-
     .content .pagination:has(.previous) .next a {
         margin-bottom: 30px;
         border-bottom: 1px solid var(--text-color-3) !important;
@@ -248,8 +244,13 @@
 
 .content ol li,
 .content ul li {
-    color: var(--text-color-4);
     padding-left: 10px;
+    padding-bottom: 7px;
+}
+
+.content ul li::marker,
+.content ol li::marker {
+    color: var(--text-color-4) !important;
 }
 
 /* Warning */
