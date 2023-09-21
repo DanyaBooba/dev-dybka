@@ -18,10 +18,15 @@ function MainTest(active) {
 
 		if (iactive == i) {
 			block.classList.remove("d-none");
+			MainCheckNumber(i);
 		} else {
 			block.classList.add("d-none");
 		}
 	}
+}
+
+function MainCheckNumber(number) {
+	console.log("NOW: " + number);
 }
 
 function MainFinish() {
