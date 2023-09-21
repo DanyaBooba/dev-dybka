@@ -11,6 +11,8 @@ function MainTest(active) {
 	var iactive = active;
 	iactive += 1;
 
+	currentnumbermenu = iactive;
+
 	for (var i = 1; i <= countquestions; i++) {
 		var block = document.getElementById("question_" + i);
 
@@ -18,26 +20,9 @@ function MainTest(active) {
 
 		if (iactive == i) {
 			block.classList.remove("d-none");
-			MainCheckNumber(i);
 		} else {
 			block.classList.add("d-none");
 		}
-	}
-}
-
-function MainCheckNumber(number) {
-	console.log("NOW: " + number);
-
-	var block = document.getElementById("question_" + number).childNodes[0];
-
-	if (block.childNodes.length == 1) return;
-
-	var form = block.childNodes[1];
-
-	if (form.nodeName == "FORM") {
-		form.childNodes.forEach((input) => {
-			console.log(input);
-		});
 	}
 }
 
@@ -59,6 +44,6 @@ function MainFinish() {
 	finish.classList.remove("d-none");
 }
 
-MainTest(0);
+var currentnumbermenu;
 
-var currentnumbermenu = -1;
+MainTest(0);
