@@ -58,7 +58,7 @@ maintests:
     <h2 class="main-title">Тестирования</h2>
     <div class="row row-courses row-cols-1 row-cols-lg-3 g-3">
         {%- for test in maintests -%}
-            {% include 'testing/test-block.njk' %}
+            {% include 'tests/test-block.njk' %}
         {%- endfor -%}
     </div>
 </main>
