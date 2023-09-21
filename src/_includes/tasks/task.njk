@@ -7,7 +7,7 @@ layout: "base.njk"
 <main class="container">
     <div class="row row-cols-1 gx-5">
         <div class="col-md-4 see-at-pc" id="lessonleftpcmenu">
-            {% include "courses/course-leftbar.njk" %}
+            {% include "tasks/task-leftbar.njk" %}
         </div>
         <div class="col-md-8 content" id="lessonrightcontent">
 
@@ -19,11 +19,6 @@ layout: "base.njk"
                     <a id="maincontent_buttoninfo" href="/courses/{{ lesson.url }}" class="btn-openmenu">
                         <svg><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
                     </a>
-                    {% if lesson.github %}
-                    <a href="{{ lesson.github }}" target="_blank" class="btn-openmenu btn-openmenu-github">
-                        <svg><use xlink:href="/img/icons/icons.svg#github"></use></svg>GitHub
-                    </a>
-                    {% endif %}
                 </div>
             </div>
 
@@ -35,39 +30,19 @@ layout: "base.njk"
                                 <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
                             </a>
                         </div>
-                        {% if lesson.github %}
-                        <div class="col">
-                            <a href="{{ lesson.github }}" target="_blank" class="content-btn content-flex">
-                                <svg style="margin-right: 15px" width="32" height="32"><use xlink:href="/img/icons/icons.svg#github"></use></svg>GitHub
-                            </a>
-                        </div>
-                        {% endif %}
                     </div>
                 </div>
             </div>
 
-            <div id="posttitle" class="visually-hidden">Начало урока</div>
+            <div id="posttitle" class="visually-hidden">Начало задания</div>
 
             <div id="postcontent">
                 {{ content | safe }}
             </div>
 
-            {% if next or prev or nextEnd %}
-            {% include "courses/course-pagination.njk" %}
-            {% endif %}
         </div>
     </div>
 </main>
 
-{% if not info %}
-{% include 'courses/course-bottom.njk' %}
-{% endif %}
-
 {% include 'footer.njk' %}
-<script src="/js/course-id.js"></script>
-<script src="/js/course-links.js"></script>
-<script src="/js/course-hotkeys.js"></script>
-<script src="/js/course-leftbar.js"></script>
-<script src="/js/course-showmenu.js"></script>
-<script src="/js/course-scrollbar.js"></script>
-<script src="/js/course-leftbar-heads.js"></script>
+<script src="/js/task.js"></script>
