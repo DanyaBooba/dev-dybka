@@ -9,37 +9,30 @@
 <div id="question_1" class="d-none">
     <div class="container px-0">
         <p>
-            123
+            Выберите один из вариантов:
         </p>
         <form>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                 <label class="form-check-label" for="flexRadioDefault1">
-                    Default radio
+                    Вариант 1
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                 <label class="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
+                    Вариант 2
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Вариант 3
                 </label>
             </div>
         </form>
-
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-                Default checkbox
-            </label>
-            </div>
-            <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
-            <label class="form-check-label" for="defaultCheck2">
-                Disabled checkbox
-            </label>
-        </div>
     </div>
-    <div class="mt-3">
+    <div class="test-buttons-pagination">
         <button type="button" class="btn btn-primary" onClick="MainTest(1)">Следующий</button>
     </div>
 
@@ -49,7 +42,7 @@
     <div class="container px-0">
         2
     </div>
-    <div class="mt-3 d-flex">
+    <div class="test-buttons-pagination d-flex">
         <button type="button" class="btn btn-primary me-2" onClick="MainTest(0)">Предыдущий</button>
         <button type="button" class="btn btn-primary" onClick="MainTest(2)">Следующий</button>
     </div>
@@ -59,7 +52,7 @@
     <div class="container px-0">
         3
     </div>
-    <div class="mt-3 d-flex">
+    <div class="test-buttons-pagination d-flex">
         <button type="button" class="btn btn-primary me-2" onClick="MainTest(1)">Предыдущий</button>
         <button type="button" class="btn btn-success" onClick="MainFinish()">Завершить</button>
     </div>
