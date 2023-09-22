@@ -8,17 +8,15 @@ function CountQuestions() {
 
 function MainTest(active) {
 	var countquestions = CountQuestions();
-	var iactive = active;
-	iactive += 1;
 
-	currentnumbermenu = iactive;
+	currentnumbermenu = active;
 
-	for (var i = 1; i <= countquestions; i++) {
+	for (var i = 0; i < countquestions; i++) {
 		var block = document.getElementById("question_" + i);
 
 		if (block === null) break;
 
-		if (iactive == i) {
+		if (active == i) {
 			block.classList.remove("d-none");
 		} else {
 			block.classList.add("d-none");
@@ -27,8 +25,12 @@ function MainTest(active) {
 }
 
 function MakeActiveMenu() {
-	console.log("test");
+	list[currentnumbermenu] = 1;
+
+	UpdateNext();
 }
+
+function UpdateNext() {}
 
 function MainFinish() {
 	console.log("FINISH");
@@ -44,6 +46,17 @@ function MainFinish() {
 	finish.classList.remove("d-none");
 }
 
+// Default
+
 var currentnumbermenu;
+
+var list = [];
+list.length = CountQuestions();
+
+for (var i = 0; i < list.length; i++) {
+	list[i] = 0;
+}
+
+console.log(list);
 
 MainTest(0);

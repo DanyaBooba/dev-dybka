@@ -6,7 +6,7 @@
 Тест завершился
 </div>
 
-<div id="question_1" class="d-none">
+<div id="question_0" class="d-none">
     <div class="container px-0">
         <p>
             Выберите один из вариантов:
@@ -38,7 +38,7 @@
 
 </div>
 
-<div id="question_2" class="d-none">
+<div id="question_1" class="d-none">
     <div class="container px-0">
         2
     </div>
@@ -48,7 +48,7 @@
     </div>
 </div>
 
-<div id="question_3" class="d-none">
+<div id="question_2" class="d-none">
     <div class="container px-0">
         3
     </div>
