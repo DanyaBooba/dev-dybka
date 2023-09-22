@@ -312,6 +312,21 @@ function AddMobileHeads() {
 	mobilebar.insertAdjacentHTML("afterbegin", heads.innerHTML);
 }
 
+function AddMobileHeads2() {
+	var mobilebar = document.getElementById("mobileMenuHeads2");
+	var leftbar = document.getElementById("leftbar").childNodes;
+
+	var lists = "<ul>";
+	for (var i = 0; i < leftbar.length; i++) {
+		var item = leftbar[i];
+		lists +=
+			"<li><a href='" + item.href + "'>" + item.textContent + "</a></li>";
+	}
+
+	lists += "<ul>";
+	mobilebar.insertAdjacentHTML("beforeend", lists);
+}
+
 // Left Bar
 
 function LeftBar() {
@@ -454,6 +469,7 @@ AddID();
 EditLinks();
 AddLeftBarHeads();
 AddMobileHeads();
+AddMobileHeads2();
 ScrollBar();
 
 if (localStorage.getItem("bottom-menu-pc") === "close") {
