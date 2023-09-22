@@ -166,10 +166,26 @@ function CopyCode(id) {
 	}
 }
 
+function AddMobileHeads2() {
+	var mobilebar = document.getElementById("mobileMenuHeads2");
+	var leftbar = document.getElementById("leftbar").childNodes;
+
+	var lists = "<ul>";
+	for (var i = 0; i < leftbar.length; i++) {
+		var item = leftbar[i];
+		lists +=
+			"<li><a href='" + item.href + "'>" + item.textContent + "</a></li>";
+	}
+
+	lists += "<ul>";
+	mobilebar.insertAdjacentHTML("beforeend", lists);
+}
+
 // Default
 
 LeftBar();
 EditCodeOnPage();
+AddMobileHeads2();
 
 if (content !== null && leftmenu !== null && button !== null) {
 	var storageLeftMenu = localStorage.getItem("left-menu");
