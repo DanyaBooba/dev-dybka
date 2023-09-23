@@ -30,7 +30,12 @@ function MakeActiveMenu() {
 	UpdateNext();
 }
 
-function UpdateNext() {}
+function UpdateNext() {
+	if (list[currentnumbermenu] == 1) {
+		var block = document.getElementById("question_" + currentnumbermenu);
+		console.log(block);
+	}
+}
 
 function MainFinish() {
 	console.log("FINISH");

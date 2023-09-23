@@ -40,7 +40,29 @@
 
 <div id="question_1" class="d-none">
     <div class="container px-0">
-        2
+        <p>
+            Выберите один из вариантов 2:
+        </p>
+        <form>
+            <div class="form-check">
+                <input class="form-check-input" onClick="MakeActiveMenu()" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Вариант 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" onClick="MakeActiveMenu()" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Вариант 2
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" onClick="MakeActiveMenu()" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Вариант 3
+                </label>
+            </div>
+        </form>
     </div>
     <div class="test-buttons-pagination d-flex">
         <button type="button" class="btn btn-primary me-2" onClick="MainTest(0)">Предыдущий</button>
@@ -50,7 +72,29 @@
 
 <div id="question_2" class="d-none">
     <div class="container px-0">
-        3
+        <p>
+            Выберите один из вариантов 3:
+        </p>
+        <form>
+            <div class="form-check">
+                <input class="form-check-input" onClick="MakeActiveMenu()" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Вариант 1
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" onClick="MakeActiveMenu()" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Вариант 2
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" onClick="MakeActiveMenu()" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Вариант 3
+                </label>
+            </div>
+        </form>
     </div>
     <div class="test-buttons-pagination d-flex">
         <button type="button" class="btn btn-primary me-2" onClick="MainTest(1)">Предыдущий</button>
