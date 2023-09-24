@@ -43,7 +43,7 @@ maintests:
 {% include "header.njk" %}
 
 <main class="container mt-5">
-    <h2 class="main-title">Бесплатные курсы</h2>
+    <h2 class="main-title">Курсы</h2>
     <div class="row row-courses row-cols-1 row-cols-lg-3 g-3">
         {%- for course in maincourses -%}
             {% include 'courses/course-block.njk' %}
