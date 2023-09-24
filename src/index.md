@@ -49,7 +49,7 @@ maintests:
             {% include 'courses/course-block.njk' %}
         {%- endfor -%}
     </div>
-    <h2 class="main-title">Задания</h2>
+    <!-- <h2 class="main-title">Задания</h2>
     <div class="row row-courses row-cols-1 row-cols-lg-3 g-3">
         {%- for task in maintasks -%}
             {% include 'tasks/task-block.njk' %}
@@ -60,7 +60,7 @@ maintests:
         {%- for test in maintests -%}
             {% include 'tests/test-block.njk' %}
         {%- endfor -%}
-    </div>
+    </div> -->
 </main>
 
 {% include 'footer.njk' %}

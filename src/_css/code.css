@@ -50,6 +50,7 @@ main pre {
     font-size: 16px !important;
 
     border: 2px solid var(--bg-light-3-border);
+    margin-bottom: 20px;
 }
 
 main pre code {
