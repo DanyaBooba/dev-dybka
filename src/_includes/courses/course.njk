@@ -1,0 +1,67 @@
+---
+layout: "base.njk"
+---
+
+{% include 'header-course.njk' %}
+
+<main class="container">
+    <div class="row row-cols-1 gx-5">
+        <div class="col-md-4 see-at-pc" id="lessonleftpcmenu">
+            {% include "courses/course-leftbar.njk" %}
+        </div>
+        <div class="col-md-8 content" id="lessonrightcontent">
+
+            <div class="d-none see-at-pc mb-2" id="lessonbuttonmenu">
+                <div class="d-flex">
+                    <button type="button" onClick="getShort()" class="btn-openmenu">
+                        <svg><use xlink:href="/img/icons/icons.svg#chevron-bar-right"></use></svg>Открыть меню
+                    </button>
+                    <a id="maincontent_buttoninfo" href="/courses/{{ lesson.url }}" class="btn-openmenu">
+                        <svg><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
+                    </a>
+                    {% if lesson.github %}
+                    <a href="{{ lesson.github }}" target="_blank" class="btn-openmenu btn-openmenu-github">
+                        <svg><use xlink:href="/img/icons/icons.svg#github"></use></svg>GitHub
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="see-at-mobile mb-3">
+                <div class="container px-0 mb-2">
+                    <div class="content-row">
+                        <div class="col">
+                            <a id="leftbar_buttoninfo_mobile" href="/courses/{{ lesson.url }}/" class="content-btn content-flex">
+                                <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#info"></use></svg>Информация
+                            </a>
+                        </div>
+                        {% if lesson.github %}
+                        <div class="col">
+                            <a href="{{ lesson.github }}" target="_blank" class="content-btn content-flex">
+                                <svg style="margin-right: 15px" width="32" height="32"><use xlink:href="/img/icons/icons.svg#github"></use></svg>GitHub
+                            </a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+
+            <div id="posttitle" class="visually-hidden">Начало урока</div>
+
+            <div id="postcontent">
+                {{ content | safe }}
+            </div>
+
+            {% if next or prev or nextEnd %}
+            {% include "courses/course-pagination.njk" %}
+            {% endif %}
+        </div>
+    </div>
+</main>
+
+{% if not info %}
+{% include 'courses/course-bottom.njk' %}
+{% endif %}
+
+{% include 'footer.njk' %}
+<script src="/js/course.js"></script>

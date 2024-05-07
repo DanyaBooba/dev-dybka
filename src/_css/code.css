@@ -1,0 +1,87 @@
+/* .code {
+    margin-bottom: 30px;
+} */
+
+.code-copy {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    padding: 10px 16px;
+    border-radius: var(--border-radius-1);
+    background: var(--text-color-6);
+
+    font-family: Geologica-Light;
+    font-size: 14px;
+}
+
+.code-copy:hover,
+.code-copy:focus {
+    background: var(--text-color-7);
+}
+
+.code-copy button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+}
+
+.code-copy svg {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 2px;
+    margin-right: 8px;
+}
+
+main pre {
+    background: var(--bg-light-3);
+    border-radius: var(--border-radius-2);
+    padding: 20px;
+    width: 100%;
+    font-size: 16px !important;
+
+    border: 2px solid var(--bg-light-3-border);
+    margin-bottom: 20px;
+}
+
+main pre code {
+    padding-right: 30px;
+}
+
+code,
+code p {
+    font-family: var(--bs-font-monospace) !important;
+    /* font-size: 16px !important; */
+}
+
+code p {
+    margin: 0 !important;
+}
+
+.count {
+    counter-increment: line-count;
+    color: var(--text-color-2);
+    text-align: end;
+    font-family: monospace;
+    font-size: 16px !important;
+}
+
+.count::before {
+    content: counter(line-count);
+}
+
+.code .counter
+{
+    user-select: none !important;
+    margin-right: 20px;
+    font-size: 16px !important;
+}

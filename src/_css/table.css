@@ -1,0 +1,9 @@
+table,
+thead,
+tbody,
+th,
+tr,
+td {
+    background: var(--bg-color) !important;
+    color: var(--text-default) !important;
+}

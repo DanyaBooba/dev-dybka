@@ -1,0 +1,49 @@
+main hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+main a {
+    color: var(--text-default);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid var(--text-color-4);
+}
+
+main a:hover,
+main a:focus {
+    color: var(--text-default) !important;
+    border-bottom: 1px solid var(--text-default);
+}
+
+main li {
+    font-size: 20px;
+}
+
+main img {
+    border-radius: var(--border-radius-2);
+    width: 100%;
+    height: auto;
+}
+
+main ol,
+main ul {
+    font-size: 20px;
+}
+
+main ol li,
+main ul li {
+    padding-left: 10px;
+    padding-bottom: 7px;
+}
+
+main ul li::marker,
+main ol li::marker {
+    color: var(--text-color-4) !important;
+}

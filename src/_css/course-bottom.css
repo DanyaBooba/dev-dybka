@@ -1,0 +1,60 @@
+.course-bottom
+{
+    background: var(--bg-color-rgba);
+    backdrop-filter: blur(15px);
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.course-bottom a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* SVG Link */
+
+.course-bottom .svg-link {
+    width: 42px;
+    height: 42px;
+    margin-right: 10px;
+    /* border: 1px solid var(--text-color-3); */
+    border-radius: var(--border-radius-1);
+    fill: var(--text-color-2);
+    background: var(--bg-color);
+}
+
+.course-bottom a:hover .svg-link {
+    fill: var(--text-default);
+}
+
+/* SVG Button */
+
+.course-bottom .svg-button {
+    width: 42px;
+    height: 42px;
+    /* border: 1px solid var(--text-color-3); */
+    border-radius: var(--border-radius-1);
+    fill: var(--text-color-2);
+    background: var(--bg-color);
+    margin-right: 10px;
+}
+
+.course-bottom button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.course-bottom button:hover .svg-button {
+    fill: var(--text-default);
+}
+
+/* Title */
+
+.course-bottom .title {
+    margin-left: 20px;
+}

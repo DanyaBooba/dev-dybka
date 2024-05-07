@@ -1,0 +1,51 @@
+.btn-openmenu
+{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+    background: var(--bg-light-1);
+    border-radius: var(--border-radius-2);
+    fill: var(--text-default);
+    color: var(--text-default);
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px 21px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-decoration: none !important;
+    border: 0 !important;
+}
+
+.btn-openmenu.btn-openmenu-github {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn-openmenu svg {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+}
+
+.btn-openmenu:hover,
+.btn-openmenu:focus {
+    background: var(--bs-tertiary-bg-me);
+    border-radius: var(--border-radius-2);
+}
+
+/* Active */
+
+.btn-openmenu.active {
+    background: var(--color-primary);
+    color: #fff !important;
+}
+
+.btn-openmenu.active svg {
+    fill: #fff !important;
+}

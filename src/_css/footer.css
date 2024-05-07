@@ -1,0 +1,70 @@
+/* Footer */
+
+.footer {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--text-color-3);
+}
+
+.footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+/* Logo */
+
+.footer__logo {
+    margin-bottom: 30px !important;
+}
+
+.footer__logo a {
+    font-size: 30px;
+    color: var(--text-color-1);
+    text-decoration: none;
+}
+
+.footer a:hover p {
+    color: var(--text-color-2);
+}
+
+/* List */
+
+.footer li {
+    margin-bottom: 10px;
+}
+
+/* Meta */
+
+.footer .meta {
+    font-size: 15px;
+    margin-bottom: 1px;
+}
+
+.footer .meta a,
+.footer .meta p {
+    color: var(--text-color-2);
+}
+
+.footer .meta.first {
+    margin-right: 30px;
+}
+
+/* Item */
+
+.footer .footer__item {
+    margin-bottom: 30px;
+    padding-left: 2rem;
+}
+
+/* Bottom */
+
+.footer--bottom {
+    padding-left: 2rem;
+}

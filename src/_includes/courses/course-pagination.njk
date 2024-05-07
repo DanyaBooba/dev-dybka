@@ -1,0 +1,34 @@
+<div class="container px-0">
+    <div class="row pagination-reverse px-3 row-cols-1 row-cols-lg-2 pagination">
+        {% if nextEnd %}
+            <div class="next">
+                    <a href="/courses/{{ lesson.url }}/end" id="postnextlesson" class="d-flex align-items-center" aria-label="Открыть следующий урок">
+                        Завершить курс <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#arrow-right-short"></use></svg>
+                    </a>
+                    <div class="hotkeys see-at-pc">
+                        <span>alt</span> + <svg><use xlink:href="/img/icons/icons.svg#arrow-right-short"></use></svg>
+                    </div>
+                </div>
+        {% endif %}
+        {% if next %}
+            <div class="next">
+                <a href="/courses/{{ lesson.url }}/{{ next }}" id="postnextlesson" class="d-flex align-items-center" aria-label="Открыть следующий урок">
+                    Следующий урок <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#arrow-right-short"></use></svg>
+                </a>
+                <div class="hotkeys see-at-pc">
+                    <span>alt</span> + <svg><use xlink:href="/img/icons/icons.svg#arrow-right-short"></use></svg>
+                </div>
+            </div>
+        {% endif %}
+        {% if prev %}
+            <div class="previous">
+                <a href="/courses/{{ lesson.url }}/{{ prev }}" id="postprevlesson" class="d-flex align-items-center" aria-label="Открыть предыдущий урок">
+                    <svg width="32" height="32"><use xlink:href="/img/icons/icons.svg#arrow-left-short"></use></svg> Предыдущий урок
+                </a>
+                <div class="hotkeys hotkeys-end see-at-pc">
+                    <span>alt</span> + <svg><use xlink:href="/img/icons/icons.svg#arrow-left-short"></use></svg>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>

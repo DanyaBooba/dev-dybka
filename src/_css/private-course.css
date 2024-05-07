@@ -1,0 +1,18 @@
+.private-course form .input-group {
+    width: 300px;
+}
+
+.private-course form {
+    margin-bottom: 10px;
+}
+
+.private-course--title {
+    font-family: HalvarBreit;
+    font-size: 30px;
+}
+
+.private-course--more
+{
+    margin-bottom: 20px;
+    color: var(--text-color-2);
+}

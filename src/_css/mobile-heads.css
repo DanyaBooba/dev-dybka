@@ -1,0 +1,19 @@
+.mobile-menu-heads ul {
+    list-style-type: none;
+}
+
+.mobile-menu-heads ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.mobile-menu-heads ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--text-color-4);
+}
+
+.mobile-menu-heads ul li a:hover {
+    transition: var(--delay-1);
+    border-bottom: 1px solid var(--text-default);
+}

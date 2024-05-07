@@ -1,0 +1,58 @@
+/* List */
+
+.list-group-item {
+    font-size: 18px;
+    padding: 15px 20px;
+    color: var(--text-default);
+    transition: var(--delay-2);
+
+    background: var(--bg-color);
+    --bs-list-group-action-hover-bg: var(--bs-tertiary-bg-me-2);
+    --bs-list-group-action-active-bg: var(--bs-secondary-bg-me);
+}
+
+.list-group p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.list-group-item.active {
+    border-radius: var(--border-radius-1) !important;
+}
+
+/* Hover */
+
+.list-group-item:hover,
+.list-group-item:focus {
+    color: var(--text-default) !important;
+}
+
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+    color: #fff !important;
+}
+
+/* Disabled */
+
+.disabled {
+    color: var(--text-color-2) !important;
+    background: var(--bg-color) !important;
+    transition: none !important;
+    padding: 0 !important;
+    margin-bottom: 30px;
+}
+
+/* Small */
+
+.list-group-item.small {
+    margin-bottom: 5px;
+    padding: 13px;
+    border-radius: var(--border-radius-1) !important;
+    box-shadow: none !important;
+}
+
+/* Active */
+
+.list-group-item.active svg {
+    fill: #fff;
+}

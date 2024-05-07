@@ -1,0 +1,21 @@
+{
+	"layout": "tasks/task.njk",
+	"lesson": {
+		"url": "example",
+		"name": "Задания на Python №1",
+		"leftbar": [
+			{
+				"name": "Задание №1",
+				"id": 1
+			},
+			{
+				"name": "Задание №2",
+				"id": 2
+			},
+			{
+				"name": "Задание №3",
+				"id": 3
+			}
+		]
+	}
+}

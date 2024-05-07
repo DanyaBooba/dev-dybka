@@ -1,0 +1,15 @@
+@media(max-width: 991px) {
+    .course-empty {
+        display: none !important;
+    }
+
+    .see-at-pc {
+        display: none !important;
+    }
+}
+
+@media(min-width: 992px) {
+    .see-at-mobile {
+        display: none !important;
+    }
+}
