@@ -1,9 +1,10 @@
 const gulp = require("gulp");
-const htmlmin = require("gulp-htmlmin");
+const sync = require("browser-sync");
 const cssmin = require("gulp-cssmin");
+const htmlmin = require("gulp-htmlmin");
+const nunjucks = require("gulp-nunjucks");
 const cssconcat = require("gulp-concat-css");
 const autoprefixer = require("gulp-autoprefixer");
-const sync = require("browser-sync");
 
 // HTML
 
@@ -74,9 +75,9 @@ gulp.task("fonts", () => {
 
 // Htaccess
 
-gulp.task("htaccess", () => {
-	return gulp.src("src/.htaccess").pipe(gulp.dest("dist/"));
-});
+// gulp.task("htaccess", () => {
+// 	return gulp.src("src/.htaccess").pipe(gulp.dest("dist/"));
+// });
 
 // Watch
 
@@ -115,7 +116,7 @@ gulp.task(
 			"javascript",
 			"fonts",
 			"img:media",
-			"htaccess",
+			// "htaccess",
 			"data:courses"
 		),
 		gulp.parallel("watch", "serve")

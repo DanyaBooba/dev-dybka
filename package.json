@@ -24,6 +24,7 @@
     "gulp-concat-css": "^3.1.0",
     "gulp-cssmin": "^0.2.0",
     "gulp-file-include": "^2.3.0",
-    "gulp-htmlmin": "^5.0.1"
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-nunjucks": "^5.1.0"
   }
 }
