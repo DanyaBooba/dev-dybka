@@ -1,7 +1,0 @@
-{
-	"layout": "tests/test.njk",
-	"lesson": {
-		"url": "example",
-		"name": "Какая ты феечка"
-    }
-}

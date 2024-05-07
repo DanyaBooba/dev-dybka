@@ -10,84 +10,76 @@ const autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("html", () => {
 	return gulp
-		.src("public/**/*.html")
-		.pipe(
-			htmlmin({
-				collapseWhitespace: true,
-				removeComments: true,
-			})
-		)
+		.src(["src/*.html", "src/courses/**/*.html"])
+		.pipe(nunjucks.compile())
+		.pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
 		.pipe(gulp.dest("dist"));
 });
 
-// Styles:index
+// Styles
 
-gulp.task("styles:index", () => {
+gulp.task("styles", () => {
 	return gulp
-		.src(["src/_css/*.css", "src/_css/adaptive/*.css"])
+		.src(["src/css/*.css"])
 		.pipe(autoprefixer())
 		.pipe(cssconcat("index.css"))
 		.pipe(cssmin())
 		.pipe(gulp.dest("dist/css"));
 });
 
-// Styles:const
+// Styles Const
 
 gulp.task("styles:const", () => {
 	return gulp
-		.src("src/_css/__const/*.css")
-		.pipe(autoprefixer())
+		.src("src/css/const/*.css")
 		.pipe(cssmin())
 		.pipe(gulp.dest("dist/css"));
 });
 
-// JavaScript
+// JS
 
-gulp.task("javascript", () => {
-	return gulp.src("src/_js/**/*.js").pipe(gulp.dest("dist/js"));
+gulp.task("js", () => {
+	return gulp.src("src/js/**/*.js").pipe(gulp.dest("dist/js"));
 });
 
-// Img:media
+// Images
 
-gulp.task("img:media", () => {
-	return gulp.src("src/_media/**/*").pipe(gulp.dest("dist/img"));
+gulp.task("images", () => {
+	return gulp.src("src/img/**/*").pipe(gulp.dest("dist/img"));
 });
 
-// Data:courses
+// Courses
 
-gulp.task("data:courses", () => {
+gulp.task("courses", () => {
 	return gulp
 		.src([
 			"src/courses/**/*.svg",
 			"src/courses/**/*.png",
 			"src/courses/**/*.jpg",
+			"src/courses/**/*.webp",
+			"src/courses/**/*.avi",
+			"src/courses/**/*.jfif",
 			"src/courses/**/*.jpeg",
 			"src/courses/**/*.zip",
 		])
-		.pipe(gulp.dest("dist/courses/"));
+		.pipe(gulp.dest("dist/"));
 });
 
 // Fonts
 
 gulp.task("fonts", () => {
-	return gulp.src("src/_fonts/**/*").pipe(gulp.dest("dist/fonts"));
+	return gulp.src("src/fonts/**/*").pipe(gulp.dest("dist/fonts"));
 });
-
-// Htaccess
-
-// gulp.task("htaccess", () => {
-// 	return gulp.src("src/.htaccess").pipe(gulp.dest("dist/"));
-// });
 
 // Watch
 
 gulp.task("watch", () => {
 	gulp.watch("public/**/*.html", gulp.series("html"));
-	gulp.watch("src/**/*.css", gulp.series("styles:index", "styles:const"));
-	gulp.watch("src/**/*.js", gulp.series("javascript"));
+	gulp.watch("src/**/*.css", gulp.series("styles", "styles:const"));
+	gulp.watch("src/**/*.js", gulp.series("js"));
 	gulp.watch(
-		["src/_fonts/**/*", "src/_media/**/*", "src/courses/**/*"],
-		gulp.series("fonts", "img:media", "data:courses")
+		["src/fonts/**/*", "src/img/**/*", "src/courses/**/*"],
+		gulp.series("fonts", "images", "courses")
 	);
 });
 
@@ -111,13 +103,13 @@ gulp.task(
 	gulp.series(
 		gulp.parallel(
 			"html",
-			"styles:index",
+			"styles",
 			"styles:const",
-			"javascript",
+			"js",
 			"fonts",
-			"img:media",
+			"images",
 			// "htaccess",
-			"data:courses"
+			"courses"
 		),
 		gulp.parallel("watch", "serve")
 	)
